@@ -1,0 +1,259 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:2:1-71:12
+INJECTED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:2:1-71:12
+INJECTED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:2:1-71:12
+INJECTED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:2:1-71:12
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\dinon\.gradle\caches\transforms-3\78e0b3cdca5201774e3bd5bbb11df288\transformed\material-1.3.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\dinon\.gradle\caches\transforms-3\5e5e91625336c7103a732e431bb78dab\transformed\constraintlayout-2.0.4\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\dinon\.gradle\caches\transforms-3\cf08ad5426447f598b77bfc12dabc345\transformed\appcompat-1.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [org.tensorflow:tensorflow-lite-gpu-delegate-plugin:0.4.0] C:\Users\dinon\.gradle\caches\transforms-3\476b7921e2a266dc434679047bca3c0c\transformed\tensorflow-lite-gpu-delegate-plugin-0.4.0\AndroidManifest.xml:2:1-6:12
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.9.0] C:\Users\dinon\.gradle\caches\transforms-3\51381004f7950db51975688edbb1c5ff\transformed\tensorflow-lite-gpu-2.9.0\AndroidManifest.xml:2:1-12:12
+MERGED from [org.tensorflow:tensorflow-lite:2.9.0] C:\Users\dinon\.gradle\caches\transforms-3\0dadb21be456cd60f575cd81277542e1\transformed\tensorflow-lite-2.9.0\AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\778f4df2e3764b563a34df4aaa0c63cc\transformed\viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\dinon\.gradle\caches\transforms-3\e3db870b042446c9338bad547fd16329\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.4] C:\Users\dinon\.gradle\caches\transforms-3\b697dc5061639a705de7d376e8944990\transformed\activity-1.2.4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\dinon\.gradle\caches\transforms-3\63c8f6d80f36d3bf8a0368ab21e19626\transformed\appcompat-resources-1.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\a47a3139d812d5e76cf1fac445d21229\transformed\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\dinon\.gradle\caches\transforms-3\5134bd6bc4dec4950137a8ed6ab33fcd\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\e171bc56ffafe4e08cf3a50effdb9538\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\dinon\.gradle\caches\transforms-3\4cebb07ccac871b4ea74ef53b4cfd5da\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\dinon\.gradle\caches\transforms-3\3028d41c3e3e6f0d0064345fc3a2cdc2\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\dinon\.gradle\caches\transforms-3\c72e2a36ce6e0010abee0f4fb76496a7\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\1e45971542d579c5d999a7ac1f567b17\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\f4191587b5d807e8a79dd626575b738d\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\01f070a9b30a9077a89cd5510e763636\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\dinon\.gradle\caches\transforms-3\8cfb12dca3ad122062b875c465877109\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\347a22310f18348c42d9ceb2053fc7eb\transformed\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.5.0] C:\Users\dinon\.gradle\caches\transforms-3\cb77d7b4ab0aec9a7ae189fe97b70afb\transformed\core-1.5.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\710bcdf201139f4a2035e18f90c4ae68\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\dinon\.gradle\caches\transforms-3\5203e0c05f1c69412e5a89b48bec445a\transformed\lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\dinon\.gradle\caches\transforms-3\df82216f0f1b8a47f54eebfeee215b10\transformed\savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\dinon\.gradle\caches\transforms-3\b3d8b9c4af2df8a626dabfddad8d57df\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\dinon\.gradle\caches\transforms-3\349118e4845af89ce79ffd288a6f3bed\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\dbec319756647e146818afa35820abad\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\dinon\.gradle\caches\transforms-3\e32e81c3fb2c53206512cb7a69c6115d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\ae8c7e96661ae663bc7069576e68db80\transformed\tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\dinon\.gradle\caches\transforms-3\165880743e7f4f46d0bf38a1ac89aea6\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\dinon\.gradle\caches\transforms-3\bc1cf6d3e7b06427fa354ccc41adf678\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\dinon\.gradle\caches\transforms-3\f480faa7c3bf63f0f1d3f5ff22b692ec\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\b166a63f36385ff179d7069488e4e8f7\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\a8ce256d2ed88c675a85f932e03271c0\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\dac8c347e9b4349d11f33668e6a1618d\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\77a57a7634ac45c826329a5f0b5c1b4b\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\2fbce5937ef2f26af80b44e24755eac5\transformed\annotation-experimental-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [org.tensorflow:tensorflow-lite-api:2.9.0] C:\Users\dinon\.gradle\caches\transforms-3\552b0f6765b422b3fea8b96f10973a57\transformed\tensorflow-lite-api-2.9.0\AndroidManifest.xml:2:1-12:12
+	package
+		INJECTED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.BLUETOOTH
+ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:5:5-67
+	android:name
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:5:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:6:5-73
+	android:name
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:6:22-71
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:7:5-78
+	android:name
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:7:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:8:5-80
+	android:name
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:8:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:9:5-79
+	android:name
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:9:22-77
+uses-permission#android.permission.MANAGE_EXTERNAL_STORAGE
+ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:10:5-81
+	android:name
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:10:22-79
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:11:5-80
+	android:name
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:11:22-78
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:12:5-13:62
+	android:required
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:12:22-45
+	android:name
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:13:9-60
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:14:5-15:62
+	android:required
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:14:22-45
+	android:name
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:15:9-60
+application
+ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:17:5-69:19
+INJECTED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:17:5-69:19
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\dinon\.gradle\caches\transforms-3\78e0b3cdca5201774e3bd5bbb11df288\transformed\material-1.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\dinon\.gradle\caches\transforms-3\78e0b3cdca5201774e3bd5bbb11df288\transformed\material-1.3.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\dinon\.gradle\caches\transforms-3\5e5e91625336c7103a732e431bb78dab\transformed\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\dinon\.gradle\caches\transforms-3\5e5e91625336c7103a732e431bb78dab\transformed\constraintlayout-2.0.4\AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite-gpu-delegate-plugin:0.4.0] C:\Users\dinon\.gradle\caches\transforms-3\476b7921e2a266dc434679047bca3c0c\transformed\tensorflow-lite-gpu-delegate-plugin-0.4.0\AndroidManifest.xml:4:4-5:18
+MERGED from [org.tensorflow:tensorflow-lite-gpu-delegate-plugin:0.4.0] C:\Users\dinon\.gradle\caches\transforms-3\476b7921e2a266dc434679047bca3c0c\transformed\tensorflow-lite-gpu-delegate-plugin-0.4.0\AndroidManifest.xml:4:4-5:18
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.9.0] C:\Users\dinon\.gradle\caches\transforms-3\51381004f7950db51975688edbb1c5ff\transformed\tensorflow-lite-gpu-2.9.0\AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.9.0] C:\Users\dinon\.gradle\caches\transforms-3\51381004f7950db51975688edbb1c5ff\transformed\tensorflow-lite-gpu-2.9.0\AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite:2.9.0] C:\Users\dinon\.gradle\caches\transforms-3\0dadb21be456cd60f575cd81277542e1\transformed\tensorflow-lite-2.9.0\AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite:2.9.0] C:\Users\dinon\.gradle\caches\transforms-3\0dadb21be456cd60f575cd81277542e1\transformed\tensorflow-lite-2.9.0\AndroidManifest.xml:10:5-20
+MERGED from [androidx.core:core:1.5.0] C:\Users\dinon\.gradle\caches\transforms-3\cb77d7b4ab0aec9a7ae189fe97b70afb\transformed\core-1.5.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.5.0] C:\Users\dinon\.gradle\caches\transforms-3\cb77d7b4ab0aec9a7ae189fe97b70afb\transformed\core-1.5.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\dinon\.gradle\caches\transforms-3\e32e81c3fb2c53206512cb7a69c6115d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\dinon\.gradle\caches\transforms-3\e32e81c3fb2c53206512cb7a69c6115d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [org.tensorflow:tensorflow-lite-api:2.9.0] C:\Users\dinon\.gradle\caches\transforms-3\552b0f6765b422b3fea8b96f10973a57\transformed\tensorflow-lite-api-2.9.0\AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite-api:2.9.0] C:\Users\dinon\.gradle\caches\transforms-3\552b0f6765b422b3fea8b96f10973a57\transformed\tensorflow-lite-api-2.9.0\AndroidManifest.xml:10:5-20
+	android:extractNativeLibs
+		INJECTED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.5.0] C:\Users\dinon\.gradle\caches\transforms-3\cb77d7b4ab0aec9a7ae189fe97b70afb\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:22:9-35
+	android:label
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:20:9-41
+	android:roundIcon
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:21:9-54
+	android:icon
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:19:9-43
+	android:allowBackup
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:18:9-35
+	android:theme
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:23:9-47
+activity#com.example.applayout.MainActivity
+ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:25:9-32:20
+	android:exported
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:26:13-36
+	android:name
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:25:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:27:13-31:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:28:17-68
+	android:name
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:28:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:30:17-76
+	android:name
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:30:27-74
+activity#com.example.applayout.Report.ReportActivity
+ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:34:9-41:20
+	android:exported
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:35:13-36
+	android:name
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:34:19-56
+activity#com.example.applayout.Communications.CommunicationActivity
+ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:43:9-50:20
+	android:exported
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:44:13-36
+	android:name
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:43:19-71
+activity#com.example.applayout.Communications.BluetoothActivity
+ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:52:9-59:20
+	android:exported
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:53:13-36
+	android:name
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:52:19-67
+activity#com.example.applayout.Communications.WifiActivity
+ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:61:9-68:20
+	android:exported
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:62:13-36
+	android:name
+		ADDED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:61:19-62
+uses-sdk
+INJECTED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\dinon\.gradle\caches\transforms-3\78e0b3cdca5201774e3bd5bbb11df288\transformed\material-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.3.0] C:\Users\dinon\.gradle\caches\transforms-3\78e0b3cdca5201774e3bd5bbb11df288\transformed\material-1.3.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\dinon\.gradle\caches\transforms-3\5e5e91625336c7103a732e431bb78dab\transformed\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] C:\Users\dinon\.gradle\caches\transforms-3\5e5e91625336c7103a732e431bb78dab\transformed\constraintlayout-2.0.4\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\dinon\.gradle\caches\transforms-3\cf08ad5426447f598b77bfc12dabc345\transformed\appcompat-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\dinon\.gradle\caches\transforms-3\cf08ad5426447f598b77bfc12dabc345\transformed\appcompat-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.9.0] C:\Users\dinon\.gradle\caches\transforms-3\51381004f7950db51975688edbb1c5ff\transformed\tensorflow-lite-gpu-2.9.0\AndroidManifest.xml:7:5-8:41
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.9.0] C:\Users\dinon\.gradle\caches\transforms-3\51381004f7950db51975688edbb1c5ff\transformed\tensorflow-lite-gpu-2.9.0\AndroidManifest.xml:7:5-8:41
+MERGED from [org.tensorflow:tensorflow-lite:2.9.0] C:\Users\dinon\.gradle\caches\transforms-3\0dadb21be456cd60f575cd81277542e1\transformed\tensorflow-lite-2.9.0\AndroidManifest.xml:7:5-8:41
+MERGED from [org.tensorflow:tensorflow-lite:2.9.0] C:\Users\dinon\.gradle\caches\transforms-3\0dadb21be456cd60f575cd81277542e1\transformed\tensorflow-lite-2.9.0\AndroidManifest.xml:7:5-8:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\778f4df2e3764b563a34df4aaa0c63cc\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\778f4df2e3764b563a34df4aaa0c63cc\transformed\viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\dinon\.gradle\caches\transforms-3\e3db870b042446c9338bad547fd16329\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\dinon\.gradle\caches\transforms-3\e3db870b042446c9338bad547fd16329\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] C:\Users\dinon\.gradle\caches\transforms-3\b697dc5061639a705de7d376e8944990\transformed\activity-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] C:\Users\dinon\.gradle\caches\transforms-3\b697dc5061639a705de7d376e8944990\transformed\activity-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\dinon\.gradle\caches\transforms-3\63c8f6d80f36d3bf8a0368ab21e19626\transformed\appcompat-resources-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] C:\Users\dinon\.gradle\caches\transforms-3\63c8f6d80f36d3bf8a0368ab21e19626\transformed\appcompat-resources-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\a47a3139d812d5e76cf1fac445d21229\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\a47a3139d812d5e76cf1fac445d21229\transformed\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\dinon\.gradle\caches\transforms-3\5134bd6bc4dec4950137a8ed6ab33fcd\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\dinon\.gradle\caches\transforms-3\5134bd6bc4dec4950137a8ed6ab33fcd\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\e171bc56ffafe4e08cf3a50effdb9538\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\e171bc56ffafe4e08cf3a50effdb9538\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\dinon\.gradle\caches\transforms-3\4cebb07ccac871b4ea74ef53b4cfd5da\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\dinon\.gradle\caches\transforms-3\4cebb07ccac871b4ea74ef53b4cfd5da\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\dinon\.gradle\caches\transforms-3\3028d41c3e3e6f0d0064345fc3a2cdc2\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\dinon\.gradle\caches\transforms-3\3028d41c3e3e6f0d0064345fc3a2cdc2\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\dinon\.gradle\caches\transforms-3\c72e2a36ce6e0010abee0f4fb76496a7\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\dinon\.gradle\caches\transforms-3\c72e2a36ce6e0010abee0f4fb76496a7\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\1e45971542d579c5d999a7ac1f567b17\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\1e45971542d579c5d999a7ac1f567b17\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\f4191587b5d807e8a79dd626575b738d\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\f4191587b5d807e8a79dd626575b738d\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\01f070a9b30a9077a89cd5510e763636\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\01f070a9b30a9077a89cd5510e763636\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\dinon\.gradle\caches\transforms-3\8cfb12dca3ad122062b875c465877109\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\dinon\.gradle\caches\transforms-3\8cfb12dca3ad122062b875c465877109\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\347a22310f18348c42d9ceb2053fc7eb\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\347a22310f18348c42d9ceb2053fc7eb\transformed\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.5.0] C:\Users\dinon\.gradle\caches\transforms-3\cb77d7b4ab0aec9a7ae189fe97b70afb\transformed\core-1.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0] C:\Users\dinon\.gradle\caches\transforms-3\cb77d7b4ab0aec9a7ae189fe97b70afb\transformed\core-1.5.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\710bcdf201139f4a2035e18f90c4ae68\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\710bcdf201139f4a2035e18f90c4ae68\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\dinon\.gradle\caches\transforms-3\5203e0c05f1c69412e5a89b48bec445a\transformed\lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\dinon\.gradle\caches\transforms-3\5203e0c05f1c69412e5a89b48bec445a\transformed\lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\dinon\.gradle\caches\transforms-3\df82216f0f1b8a47f54eebfeee215b10\transformed\savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\dinon\.gradle\caches\transforms-3\df82216f0f1b8a47f54eebfeee215b10\transformed\savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\dinon\.gradle\caches\transforms-3\b3d8b9c4af2df8a626dabfddad8d57df\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\dinon\.gradle\caches\transforms-3\b3d8b9c4af2df8a626dabfddad8d57df\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\dinon\.gradle\caches\transforms-3\349118e4845af89ce79ffd288a6f3bed\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\dinon\.gradle\caches\transforms-3\349118e4845af89ce79ffd288a6f3bed\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\dbec319756647e146818afa35820abad\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\dbec319756647e146818afa35820abad\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\dinon\.gradle\caches\transforms-3\e32e81c3fb2c53206512cb7a69c6115d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\dinon\.gradle\caches\transforms-3\e32e81c3fb2c53206512cb7a69c6115d\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\ae8c7e96661ae663bc7069576e68db80\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\ae8c7e96661ae663bc7069576e68db80\transformed\tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\dinon\.gradle\caches\transforms-3\165880743e7f4f46d0bf38a1ac89aea6\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\dinon\.gradle\caches\transforms-3\165880743e7f4f46d0bf38a1ac89aea6\transformed\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\dinon\.gradle\caches\transforms-3\bc1cf6d3e7b06427fa354ccc41adf678\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\dinon\.gradle\caches\transforms-3\bc1cf6d3e7b06427fa354ccc41adf678\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\dinon\.gradle\caches\transforms-3\f480faa7c3bf63f0f1d3f5ff22b692ec\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\dinon\.gradle\caches\transforms-3\f480faa7c3bf63f0f1d3f5ff22b692ec\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\b166a63f36385ff179d7069488e4e8f7\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\b166a63f36385ff179d7069488e4e8f7\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\a8ce256d2ed88c675a85f932e03271c0\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\a8ce256d2ed88c675a85f932e03271c0\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\dac8c347e9b4349d11f33668e6a1618d\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\dac8c347e9b4349d11f33668e6a1618d\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\77a57a7634ac45c826329a5f0b5c1b4b\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\77a57a7634ac45c826329a5f0b5c1b4b\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\2fbce5937ef2f26af80b44e24755eac5\transformed\annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\dinon\.gradle\caches\transforms-3\2fbce5937ef2f26af80b44e24755eac5\transformed\annotation-experimental-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [org.tensorflow:tensorflow-lite-api:2.9.0] C:\Users\dinon\.gradle\caches\transforms-3\552b0f6765b422b3fea8b96f10973a57\transformed\tensorflow-lite-api-2.9.0\AndroidManifest.xml:7:5-8:41
+MERGED from [org.tensorflow:tensorflow-lite-api:2.9.0] C:\Users\dinon\.gradle\caches\transforms-3\552b0f6765b422b3fea8b96f10973a57\transformed\tensorflow-lite-api-2.9.0\AndroidManifest.xml:7:5-8:41
+	android:targetSdkVersion
+		INJECTED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml
+		MERGED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml
+		MERGED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml
+		MERGED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from C:\Users\dinon\AndroidStudioProjects\AppLayout\app\src\main\AndroidManifest.xml:2:1-71:12 reason: tensorflow_lite_support.acceleration.configuration has a targetSdkVersion < 4

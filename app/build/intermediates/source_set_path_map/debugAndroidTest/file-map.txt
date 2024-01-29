@@ -1,0 +1,5 @@
+com.example.applayout.test.app-core-1.5.0-0 C:\Users\dinon\.gradle\caches\transforms-3\f65d44d41496144a554b40b757a91a5e\transformed\core-1.5.0\res
+com.example.applayout.test.app-androidTest-1 C:\Users\dinon\AndroidStudioProjects\AppLayout\app\build\generated\res\resValues\androidTest\debug
+com.example.applayout.test.app-mergeDebugAndroidTestResources-2 C:\Users\dinon\AndroidStudioProjects\AppLayout\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.example.applayout.test.app-mergeDebugAndroidTestResources-3 C:\Users\dinon\AndroidStudioProjects\AppLayout\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.example.applayout.test.app-merged_res-4 C:\Users\dinon\AndroidStudioProjects\AppLayout\app\build\intermediates\merged_res\debugAndroidTest
