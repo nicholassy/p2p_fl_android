@@ -26,6 +26,9 @@ id chooseApplication
 id chooseCommunication
 id communication
 id connection_status
+id federated_learning_status
+id federated_learning_text
+id federated_learning_title
 id lvApplication
 id lvBluetooth
 id lvReport
@@ -34,6 +37,7 @@ id main_user_list_title
 id modelDetails
 id p2p_fl
 id privacy
+id progressBar
 id statusApplication
 id status_title
 id testReport
@@ -41,6 +45,7 @@ id titleReport
 id wifi
 layout activity_bluetooth
 layout activity_communications
+layout activity_federatedlearning
 layout activity_main
 layout activity_report
 layout activity_wifi

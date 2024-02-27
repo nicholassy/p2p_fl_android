@@ -26,6 +26,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
+import com.example.applayout.FederatedLearning.FederatedLearningActivity;
 import com.example.applayout.R;
 
 import java.io.File;
@@ -152,8 +153,10 @@ public class BluetoothActivity extends AppCompatActivity {
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sendReceive.write();
+                //sendReceive.write();
                 status.setText("File sent");
+                Intent intent = new Intent(v.getContext(), FederatedLearningActivity.class);
+                startActivity(intent);
             }
         });
     }

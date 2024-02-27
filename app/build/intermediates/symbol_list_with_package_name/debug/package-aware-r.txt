@@ -1865,6 +1865,9 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
+id federated_learning_status
+id federated_learning_text
+id federated_learning_title
 id fill
 id fill_horizontal
 id fill_vertical
@@ -2001,6 +2004,7 @@ id pin
 id position
 id postLayout
 id privacy
+id progressBar
 id progress_circular
 id progress_horizontal
 id radio
@@ -2202,6 +2206,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_bluetooth
 layout activity_communications
+layout activity_federatedlearning
 layout activity_main
 layout activity_report
 layout activity_wifi

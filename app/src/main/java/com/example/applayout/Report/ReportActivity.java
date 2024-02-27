@@ -5,8 +5,14 @@ import android.content.Intent;
 import android.content.res.AssetFileDescriptor;
 import android.content.res.AssetManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
+import org.tensorflow.lite.task.vision.detector.ObjectDetector;
+import org.tensorflow.lite.support.model.Model;
+import org.tensorflow.lite.gpu.CompatibilityList;
+import org.tensorflow.lite.gpu.GpuDelegate;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,7 +20,9 @@ import com.example.applayout.Communications.CommunicationActivity;
 import com.example.applayout.R;
 
 import org.tensorflow.lite.Interpreter;
+import org.tensorflow.lite.Tensor;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -22,32 +30,55 @@ import java.nio.ByteOrder;
 import java.nio.FloatBuffer;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class ReportActivity extends AppCompatActivity {
+    TextView modelDetails;
     private Context context;
     Button btStart;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_report);
 
+        modelDetails = findViewById(R.id.modelDetails);
+        modelDetails.setText("Model Name: model.tflite\nLast Trained On: 30/01/2024");
+
         context = this;
 
-        try (Interpreter anotherInterpreter = new Interpreter(loadModelFile(context.getAssets(),"mobilenetv1.tflite"))) {
+        /*Model.Options options;
+        CompatibilityList compatList = new CompatibilityList();
+
+        if(compatList.isDelegateSupportedOnThisDevice()){
+            options = new Model.Options.Builder().setDevice(Model.Device.GPU).build();
+        } else {
+            options = new Model.Options.Builder().setNumThreads(4).build();
+        }
+            //Export the trained weights as checkpoint file
+            File outputFile = new File(getFilesDir(), "checkpoint.ckpt");
+            Map<String, Object> inputs = new HashMap<>();
+            inputs.put("checkpoint_path", outputFile.getAbsolutePath());
+            Map<String, Object> outputs = new HashMap<>();
+            anotherInterpreter.runSignature(inputs, outputs, "save");
+            }
+
+            //model inference
             ByteBuffer inputBuffer = prepareInputData();
-            FloatBuffer outputBuffer = FloatBuffer.allocate(40);
+            FloatBuffer outputBuffer = FloatBuffer.allocate(360000);
             Map<Integer, Object> outputs = new HashMap<>();
             int outputTensorIndex = 0;
-
             outputs.put(outputTensorIndex, outputBuffer);
-
             anotherInterpreter.runForMultipleInputsOutputs(new Object[]{inputBuffer}, outputs);
             float[] results = new float[4];
             outputBuffer.get(results);
+            Log.e("Output: ", Arrays.toString(outputBuffer.array()));
+            anotherInterpreter.close();
         } catch (IOException e){
             e.printStackTrace();
-        }
+        }*/
 
         btStart = findViewById(R.id.btStartFL);
         btStart.setOnClickListener(new View.OnClickListener() {

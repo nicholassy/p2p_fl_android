@@ -40,6 +40,7 @@ import java.util.List;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.applayout.FederatedLearning.FederatedLearningActivity;
 import com.example.applayout.R;
 
 public class WifiActivity extends AppCompatActivity {
@@ -144,6 +145,8 @@ public class WifiActivity extends AppCompatActivity {
                     serverClass.write();
                     connectionStatus.setText("File sent");
                 }
+                Intent intent = new Intent(view.getContext(), FederatedLearningActivity.class);
+                startActivity(intent);
             }
         });
 

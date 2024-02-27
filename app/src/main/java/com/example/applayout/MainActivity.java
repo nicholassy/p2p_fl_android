@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     Button btConfirm;
     ListView lvApplications;
     String[] applications;
+    public static String string;
 
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 status.setText("The Selected Application is "+applications[i]);
+                string = applications[i];
             }
         });
 
