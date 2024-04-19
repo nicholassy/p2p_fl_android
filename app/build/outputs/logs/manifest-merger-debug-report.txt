@@ -1,284 +1,322 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:2:1-53:12
-INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:2:1-53:12
-INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:2:1-53:12
-INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:2:1-53:12
-MERGED from [com.google.android.material:material:1.3.0] /Users/fawlys/.gradle/caches/transforms-3/78e0b3cdca5201774e3bd5bbb11df288/transformed/material-1.3.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/fawlys/.gradle/caches/transforms-3/5e5e91625336c7103a732e431bb78dab/transformed/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
-MERGED from [androidx.appcompat:appcompat:1.3.1] /Users/fawlys/.gradle/caches/transforms-3/cf08ad5426447f598b77bfc12dabc345/transformed/appcompat-1.3.1/AndroidManifest.xml:17:1-24:12
-MERGED from [org.tensorflow:tensorflow-lite:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/0dadb21be456cd60f575cd81277542e1/transformed/tensorflow-lite-2.9.0/AndroidManifest.xml:2:1-12:12
-MERGED from [org.tensorflow:tensorflow-lite-select-tf-ops:0.0.0-nightly-SNAPSHOT] /Users/fawlys/.gradle/caches/transforms-3/7506211ab4ad8e7ca6fab8bfc75169d0/transformed/tensorflow-lite-select-tf-ops-0.0.0-nightly-SNAPSHOT/AndroidManifest.xml:2:1-8:12
-MERGED from [org.tensorflow:tensorflow-lite-task-vision:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/d2755c545f7b05244e02b0b4345c3363/transformed/tensorflow-lite-task-vision-0.4.0/AndroidManifest.xml:2:1-9:12
-MERGED from [org.tensorflow:tensorflow-lite-gpu-delegate-plugin:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/476b7921e2a266dc434679047bca3c0c/transformed/tensorflow-lite-gpu-delegate-plugin-0.4.0/AndroidManifest.xml:2:1-6:12
-MERGED from [org.tensorflow:tensorflow-lite-gpu:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/51381004f7950db51975688edbb1c5ff/transformed/tensorflow-lite-gpu-2.9.0/AndroidManifest.xml:2:1-12:12
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/778f4df2e3764b563a34df4aaa0c63cc/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.fragment:fragment:1.3.6] /Users/fawlys/.gradle/caches/transforms-3/e3db870b042446c9338bad547fd16329/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.activity:activity:1.2.4] /Users/fawlys/.gradle/caches/transforms-3/b697dc5061639a705de7d376e8944990/transformed/activity-1.2.4/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.appcompat:appcompat-resources:1.3.1] /Users/fawlys/.gradle/caches/transforms-3/63c8f6d80f36d3bf8a0368ab21e19626/transformed/appcompat-resources-1.3.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/a47a3139d812d5e76cf1fac445d21229/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/5134bd6bc4dec4950137a8ed6ab33fcd/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/e171bc56ffafe4e08cf3a50effdb9538/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.transition:transition:1.2.0] /Users/fawlys/.gradle/caches/transforms-3/4cebb07ccac871b4ea74ef53b4cfd5da/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/3028d41c3e3e6f0d0064345fc3a2cdc2/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/c72e2a36ce6e0010abee0f4fb76496a7/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/1e45971542d579c5d999a7ac1f567b17/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/f4191587b5d807e8a79dd626575b738d/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.loader:loader:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/01f070a9b30a9077a89cd5510e763636/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/8cfb12dca3ad122062b875c465877109/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.customview:customview:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/347a22310f18348c42d9ceb2053fc7eb/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.5.0] /Users/fawlys/.gradle/caches/transforms-3/cb77d7b4ab0aec9a7ae189fe97b70afb/transformed/core-1.5.0/AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/710bcdf201139f4a2035e18f90c4ae68/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/5203e0c05f1c69412e5a89b48bec445a/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/df82216f0f1b8a47f54eebfeee215b10/transformed/savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/b3d8b9c4af2df8a626dabfddad8d57df/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/349118e4845af89ce79ffd288a6f3bed/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/dbec319756647e146818afa35820abad/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/fawlys/.gradle/caches/transforms-3/e32e81c3fb2c53206512cb7a69c6115d/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.tracing:tracing:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/ae8c7e96661ae663bc7069576e68db80/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/fawlys/.gradle/caches/transforms-3/165880743e7f4f46d0bf38a1ac89aea6/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/bc1cf6d3e7b06427fa354ccc41adf678/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/fawlys/.gradle/caches/transforms-3/f480faa7c3bf63f0f1d3f5ff22b692ec/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/b166a63f36385ff179d7069488e4e8f7/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/a8ce256d2ed88c675a85f932e03271c0/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/dac8c347e9b4349d11f33668e6a1618d/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.print:print:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/77a57a7634ac45c826329a5f0b5c1b4b/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/2fbce5937ef2f26af80b44e24755eac5/transformed/annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
-MERGED from [org.tensorflow:tensorflow-lite-support-api:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/5e3923d27f2960543e12b10e163b8355/transformed/tensorflow-lite-support-api-0.4.0/AndroidManifest.xml:2:1-5:12
-MERGED from [org.tensorflow:tensorflow-lite-api:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/552b0f6765b422b3fea8b96f10973a57/transformed/tensorflow-lite-api-2.9.0/AndroidManifest.xml:2:1-12:12
-MERGED from [org.tensorflow:tensorflow-lite-task-base:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/771a42817e8e8bdec74310c7628d1280/transformed/tensorflow-lite-task-base-0.4.0/AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/fawlys/.gradle/caches/transforms-3/49f5ef1c5244d496a3e7fd99daf6c484/transformed/image-1.0.0-beta1/AndroidManifest.xml:2:1-9:12
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:2:1-62:12
+INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:2:1-62:12
+INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:2:1-62:12
+INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:2:1-62:12
+MERGED from [com.google.android.material:material:1.3.0] /Users/fawlys/.gradle/caches/transforms-3/8da1198bcdc7e6dde52a52ff13cbe60b/transformed/material-1.3.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/fawlys/.gradle/caches/transforms-3/3bbee2446d772584c46e7f401e7a002d/transformed/constraintlayout-2.0.4/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.3.1] /Users/fawlys/.gradle/caches/transforms-3/ea46ebbe66f833209ab61d5311528191/transformed/appcompat-1.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [org.tensorflow:tensorflow-lite:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/6fd3e8724b9d63b286a02108e891a80e/transformed/tensorflow-lite-2.9.0/AndroidManifest.xml:2:1-12:12
+MERGED from [org.tensorflow:tensorflow-lite-select-tf-ops:0.0.0-nightly-SNAPSHOT] /Users/fawlys/.gradle/caches/transforms-3/54768f8d130f0b6a2acf5d6f7195d8eb/transformed/tensorflow-lite-select-tf-ops-0.0.0-nightly-SNAPSHOT/AndroidManifest.xml:2:1-8:12
+MERGED from [org.tensorflow:tensorflow-lite-task-vision:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/ea9512b3fb9e493d56dbe348c3eb8533/transformed/tensorflow-lite-task-vision-0.4.0/AndroidManifest.xml:2:1-9:12
+MERGED from [org.tensorflow:tensorflow-lite-gpu-delegate-plugin:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/894a87fc45e587305064e132d1527821/transformed/tensorflow-lite-gpu-delegate-plugin-0.4.0/AndroidManifest.xml:2:1-6:12
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/f652566ff1c82b281aafd8670bf6acdc/transformed/tensorflow-lite-gpu-2.9.0/AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/1704472f91a4223f0f69f0e8df8d3947/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/fawlys/.gradle/caches/transforms-3/2d68f6bc344941e069cd204f55d86043/transformed/fragment-1.3.6/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.4] /Users/fawlys/.gradle/caches/transforms-3/c2818263849e9f8232eab52f87eb3455/transformed/activity-1.2.4/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] /Users/fawlys/.gradle/caches/transforms-3/b4cbb11b3e779a19055f86f125a16115/transformed/appcompat-resources-1.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/ac0ef612e9a70710bb88489cf1095436/transformed/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/2bca7877bb4a2f98a4451b7f24edc77d/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/c3c9078608964b6ce36dc52867492320/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] /Users/fawlys/.gradle/caches/transforms-3/1286cfded9f69e4b7fb8483fb5d8772a/transformed/transition-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/220f188b09f4161aa33da9ced3f15807/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/b65f651ac55233979119fc3e322333ac/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/c7bffa63311596bff5c73a8bc0361546/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/dfbbd47e6d9b7e8c5c14be4f6d30d233/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/405afc8c1dbeec0ea7ddfa56ee81d888/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/6e9397c02e7e1a7e4110695b8349c0df/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/76b202748b88c241969dfde159b948d1/transformed/customview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.5.0] /Users/fawlys/.gradle/caches/transforms-3/5da798aa290c47065ca7aa96af5435b6/transformed/core-1.5.0/AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/ae9b77f4eacc247baeefe995085d54a3/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/0ffb60c900bfe47999d184c1f0bc7337/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/461517c3f7d6cdb902ac9209a1157605/transformed/savedstate-1.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/b76dec5e8ebd5ad72591d4c912bf8c47/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/37dce2c9e0b95cb0b93b416ffc5cc199/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/d5dd29c21e02293846b97b51f6612d71/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/fawlys/.gradle/caches/transforms-3/989fe53e70fb600511354d3975290551/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/ddff3962d0ce0cb679e18e20ca5fc41b/transformed/tracing-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/fawlys/.gradle/caches/transforms-3/de4eb48e3b5cae35328aaf3fb02b4822/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/89845c5451dc640a291198c30d1bc217/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/fawlys/.gradle/caches/transforms-3/c92099a1fc6301da63d455d907eae722/transformed/core-runtime-2.1.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/34c6a9e47a9e55ae635f600aab476417/transformed/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/ad5033a4bbafcc3f62ecce7286a81b87/transformed/documentfile-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/a95a8c9e1060ee313df03e4a4d49bac2/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/7057dc99f63294b5e0d582f300ad72aa/transformed/print-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/ec67d526a1cb8be06791dd71db9e9b6e/transformed/annotation-experimental-1.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [org.tensorflow:tensorflow-lite-support-api:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/efc1e4a49e4e6a22417ad1180adcdb5c/transformed/tensorflow-lite-support-api-0.4.0/AndroidManifest.xml:2:1-5:12
+MERGED from [org.tensorflow:tensorflow-lite-api:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/296a9e33382ed2172bdb92f6ab074906/transformed/tensorflow-lite-api-2.9.0/AndroidManifest.xml:2:1-12:12
+MERGED from [org.tensorflow:tensorflow-lite-task-base:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/7f8127ec11e8cbe232d3b0974e20d9cd/transformed/tensorflow-lite-task-base-0.4.0/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/fawlys/.gradle/caches/transforms-3/096c2ab73a4844234d50ec32553fdcad/transformed/image-1.0.0-beta1/AndroidManifest.xml:2:1-9:12
+INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:2:1-62:12
+INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:2:1-62:12
+INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:2:1-62:12
 	package
 		INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:2:1-62:12
+		INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml
 	android:versionName
+		INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:2:1-62:12
 		INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:2:1-62:12
+		INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.BLUETOOTH
-ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:5:5-67
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:6:5-7:37
+	android:maxSdkVersion
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:7:9-35
 	android:name
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:5:22-65
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:6:22-65
 uses-permission#android.permission.BLUETOOTH_ADMIN
-ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:6:5-73
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:8:5-9:37
+	android:maxSdkVersion
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:9:9-35
 	android:name
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:6:22-71
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:8:22-71
+uses-permission#android.permission.BLUETOOTH_SCAN
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:10:5-72
+	android:name
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:10:22-70
+uses-permission#android.permission.BLUETOOTH_CONNECT
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:11:5-75
+	android:name
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:11:22-73
+uses-permission#android.permission.BLUETOOTH_ADVERTISE
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:12:5-77
+	android:name
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:12:22-75
+uses-permission#android.permission.INTERNET
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:13:5-66
+	android:name
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:13:22-64
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:7:5-78
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:14:5-78
 	android:name
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:7:22-76
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:14:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:8:5-80
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:15:5-80
 	android:name
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:8:22-78
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:15:22-78
+uses-permission#android.permission.ACCESS_BACKGROUND_LOCATION
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:16:5-84
+	android:name
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:16:22-82
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:9:5-79
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:17:5-79
 	android:name
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:9:22-77
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:17:22-77
 uses-permission#android.permission.MANAGE_EXTERNAL_STORAGE
-ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:10:5-81
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:18:5-81
 	android:name
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:10:22-79
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:18:22-79
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:11:5-80
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:19:5-80
 	android:name
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:11:22-78
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:19:22-78
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:12:5-13:62
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:20:5-21:62
 	android:required
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:12:22-45
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:20:22-45
 	android:name
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:13:9-60
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:21:9-60
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:14:5-15:62
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:22:5-23:62
 	android:required
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:14:22-45
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:22:22-45
 	android:name
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:15:9-60
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:23:9-60
 application
-ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:17:5-51:19
-INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:17:5-51:19
-MERGED from [com.google.android.material:material:1.3.0] /Users/fawlys/.gradle/caches/transforms-3/78e0b3cdca5201774e3bd5bbb11df288/transformed/material-1.3.0/AndroidManifest.xml:22:5-20
-MERGED from [com.google.android.material:material:1.3.0] /Users/fawlys/.gradle/caches/transforms-3/78e0b3cdca5201774e3bd5bbb11df288/transformed/material-1.3.0/AndroidManifest.xml:22:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/fawlys/.gradle/caches/transforms-3/5e5e91625336c7103a732e431bb78dab/transformed/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/fawlys/.gradle/caches/transforms-3/5e5e91625336c7103a732e431bb78dab/transformed/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
-MERGED from [org.tensorflow:tensorflow-lite:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/0dadb21be456cd60f575cd81277542e1/transformed/tensorflow-lite-2.9.0/AndroidManifest.xml:10:5-20
-MERGED from [org.tensorflow:tensorflow-lite:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/0dadb21be456cd60f575cd81277542e1/transformed/tensorflow-lite-2.9.0/AndroidManifest.xml:10:5-20
-MERGED from [org.tensorflow:tensorflow-lite-select-tf-ops:0.0.0-nightly-SNAPSHOT] /Users/fawlys/.gradle/caches/transforms-3/7506211ab4ad8e7ca6fab8bfc75169d0/transformed/tensorflow-lite-select-tf-ops-0.0.0-nightly-SNAPSHOT/AndroidManifest.xml:6:5-20
-MERGED from [org.tensorflow:tensorflow-lite-select-tf-ops:0.0.0-nightly-SNAPSHOT] /Users/fawlys/.gradle/caches/transforms-3/7506211ab4ad8e7ca6fab8bfc75169d0/transformed/tensorflow-lite-select-tf-ops-0.0.0-nightly-SNAPSHOT/AndroidManifest.xml:6:5-20
-MERGED from [org.tensorflow:tensorflow-lite-gpu-delegate-plugin:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/476b7921e2a266dc434679047bca3c0c/transformed/tensorflow-lite-gpu-delegate-plugin-0.4.0/AndroidManifest.xml:4:4-5:18
-MERGED from [org.tensorflow:tensorflow-lite-gpu-delegate-plugin:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/476b7921e2a266dc434679047bca3c0c/transformed/tensorflow-lite-gpu-delegate-plugin-0.4.0/AndroidManifest.xml:4:4-5:18
-MERGED from [org.tensorflow:tensorflow-lite-gpu:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/51381004f7950db51975688edbb1c5ff/transformed/tensorflow-lite-gpu-2.9.0/AndroidManifest.xml:10:5-20
-MERGED from [org.tensorflow:tensorflow-lite-gpu:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/51381004f7950db51975688edbb1c5ff/transformed/tensorflow-lite-gpu-2.9.0/AndroidManifest.xml:10:5-20
-MERGED from [androidx.core:core:1.5.0] /Users/fawlys/.gradle/caches/transforms-3/cb77d7b4ab0aec9a7ae189fe97b70afb/transformed/core-1.5.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.5.0] /Users/fawlys/.gradle/caches/transforms-3/cb77d7b4ab0aec9a7ae189fe97b70afb/transformed/core-1.5.0/AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/fawlys/.gradle/caches/transforms-3/e32e81c3fb2c53206512cb7a69c6115d/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/fawlys/.gradle/caches/transforms-3/e32e81c3fb2c53206512cb7a69c6115d/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
-MERGED from [org.tensorflow:tensorflow-lite-api:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/552b0f6765b422b3fea8b96f10973a57/transformed/tensorflow-lite-api-2.9.0/AndroidManifest.xml:10:5-20
-MERGED from [org.tensorflow:tensorflow-lite-api:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/552b0f6765b422b3fea8b96f10973a57/transformed/tensorflow-lite-api-2.9.0/AndroidManifest.xml:10:5-20
-MERGED from [org.tensorflow:tensorflow-lite-task-base:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/771a42817e8e8bdec74310c7628d1280/transformed/tensorflow-lite-task-base-0.4.0/AndroidManifest.xml:4:4-5:18
-MERGED from [org.tensorflow:tensorflow-lite-task-base:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/771a42817e8e8bdec74310c7628d1280/transformed/tensorflow-lite-task-base-0.4.0/AndroidManifest.xml:4:4-5:18
-MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/fawlys/.gradle/caches/transforms-3/49f5ef1c5244d496a3e7fd99daf6c484/transformed/image-1.0.0-beta1/AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/fawlys/.gradle/caches/transforms-3/49f5ef1c5244d496a3e7fd99daf6c484/transformed/image-1.0.0-beta1/AndroidManifest.xml:7:5-20
-	android:extractNativeLibs
-		INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:25:5-60:19
+MERGED from [com.google.android.material:material:1.3.0] /Users/fawlys/.gradle/caches/transforms-3/8da1198bcdc7e6dde52a52ff13cbe60b/transformed/material-1.3.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.3.0] /Users/fawlys/.gradle/caches/transforms-3/8da1198bcdc7e6dde52a52ff13cbe60b/transformed/material-1.3.0/AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/fawlys/.gradle/caches/transforms-3/3bbee2446d772584c46e7f401e7a002d/transformed/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/fawlys/.gradle/caches/transforms-3/3bbee2446d772584c46e7f401e7a002d/transformed/constraintlayout-2.0.4/AndroidManifest.xml:9:5-20
+MERGED from [org.tensorflow:tensorflow-lite:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/6fd3e8724b9d63b286a02108e891a80e/transformed/tensorflow-lite-2.9.0/AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/6fd3e8724b9d63b286a02108e891a80e/transformed/tensorflow-lite-2.9.0/AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite-select-tf-ops:0.0.0-nightly-SNAPSHOT] /Users/fawlys/.gradle/caches/transforms-3/54768f8d130f0b6a2acf5d6f7195d8eb/transformed/tensorflow-lite-select-tf-ops-0.0.0-nightly-SNAPSHOT/AndroidManifest.xml:6:5-20
+MERGED from [org.tensorflow:tensorflow-lite-select-tf-ops:0.0.0-nightly-SNAPSHOT] /Users/fawlys/.gradle/caches/transforms-3/54768f8d130f0b6a2acf5d6f7195d8eb/transformed/tensorflow-lite-select-tf-ops-0.0.0-nightly-SNAPSHOT/AndroidManifest.xml:6:5-20
+MERGED from [org.tensorflow:tensorflow-lite-gpu-delegate-plugin:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/894a87fc45e587305064e132d1527821/transformed/tensorflow-lite-gpu-delegate-plugin-0.4.0/AndroidManifest.xml:4:4-5:18
+MERGED from [org.tensorflow:tensorflow-lite-gpu-delegate-plugin:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/894a87fc45e587305064e132d1527821/transformed/tensorflow-lite-gpu-delegate-plugin-0.4.0/AndroidManifest.xml:4:4-5:18
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/f652566ff1c82b281aafd8670bf6acdc/transformed/tensorflow-lite-gpu-2.9.0/AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/f652566ff1c82b281aafd8670bf6acdc/transformed/tensorflow-lite-gpu-2.9.0/AndroidManifest.xml:10:5-20
+MERGED from [androidx.core:core:1.5.0] /Users/fawlys/.gradle/caches/transforms-3/5da798aa290c47065ca7aa96af5435b6/transformed/core-1.5.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.5.0] /Users/fawlys/.gradle/caches/transforms-3/5da798aa290c47065ca7aa96af5435b6/transformed/core-1.5.0/AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/fawlys/.gradle/caches/transforms-3/989fe53e70fb600511354d3975290551/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/fawlys/.gradle/caches/transforms-3/989fe53e70fb600511354d3975290551/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
+MERGED from [org.tensorflow:tensorflow-lite-api:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/296a9e33382ed2172bdb92f6ab074906/transformed/tensorflow-lite-api-2.9.0/AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite-api:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/296a9e33382ed2172bdb92f6ab074906/transformed/tensorflow-lite-api-2.9.0/AndroidManifest.xml:10:5-20
+MERGED from [org.tensorflow:tensorflow-lite-task-base:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/7f8127ec11e8cbe232d3b0974e20d9cd/transformed/tensorflow-lite-task-base-0.4.0/AndroidManifest.xml:4:4-5:18
+MERGED from [org.tensorflow:tensorflow-lite-task-base:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/7f8127ec11e8cbe232d3b0974e20d9cd/transformed/tensorflow-lite-task-base-0.4.0/AndroidManifest.xml:4:4-5:18
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/fawlys/.gradle/caches/transforms-3/096c2ab73a4844234d50ec32553fdcad/transformed/image-1.0.0-beta1/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/fawlys/.gradle/caches/transforms-3/096c2ab73a4844234d50ec32553fdcad/transformed/image-1.0.0-beta1/AndroidManifest.xml:7:5-20
+	android:requestLegacyExternalStorage
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:32:9-52
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.5.0] /Users/fawlys/.gradle/caches/transforms-3/cb77d7b4ab0aec9a7ae189fe97b70afb/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.5.0] /Users/fawlys/.gradle/caches/transforms-3/5da798aa290c47065ca7aa96af5435b6/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:22:9-35
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:30:9-35
 	android:label
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:20:9-41
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:28:9-41
 	android:roundIcon
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:21:9-54
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:29:9-54
 	android:icon
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:19:9-43
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:27:9-43
 	android:allowBackup
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:18:9-35
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:26:9-35
 	android:theme
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:23:9-47
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:31:9-47
 activity#com.example.applayout.MainActivity
-ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:25:9-32:20
-	android:exported
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:26:13-36
-	android:name
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:25:19-47
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:27:13-31:29
-action#android.intent.action.MAIN
-ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:28:17-68
-	android:name
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:28:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:30:17-76
-	android:name
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:30:27-74
-activity#com.example.applayout.Report.ReportActivity
-ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:34:9-36:20
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:34:9-41:20
 	android:exported
 		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:35:13-36
 	android:name
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:34:19-56
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:34:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:36:13-40:29
+action#android.intent.action.MAIN
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:37:17-68
+	android:name
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:37:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:39:17-76
+	android:name
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:39:27-74
+activity#com.example.applayout.Report.ReportActivity
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:43:9-45:20
+	android:exported
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:44:13-36
+	android:name
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:43:19-56
 activity#com.example.applayout.Communications.CommunicationActivity
-ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:38:9-40:20
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:47:9-49:20
 	android:exported
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:39:13-36
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:48:13-36
 	android:name
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:38:19-71
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:47:19-71
 activity#com.example.applayout.Communications.BluetoothActivity
-ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:42:9-44:20
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:51:9-53:20
 	android:exported
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:43:13-36
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:52:13-36
 	android:name
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:42:19-67
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:51:19-67
 activity#com.example.applayout.Communications.WifiActivity
-ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:46:9-48:20
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:55:9-57:20
 	android:exported
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:47:13-36
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:56:13-36
 	android:name
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:46:19-62
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:55:19-62
 activity#com.example.applayout.FederatedLearning.FederatedLearningActivity
-ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:49:9-50:48
+ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:58:9-59:48
 	android:exported
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:50:13-36
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:59:13-36
 	android:name
-		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:49:19-78
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:58:19-78
 uses-sdk
 INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml
 INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml
-MERGED from [com.google.android.material:material:1.3.0] /Users/fawlys/.gradle/caches/transforms-3/78e0b3cdca5201774e3bd5bbb11df288/transformed/material-1.3.0/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.material:material:1.3.0] /Users/fawlys/.gradle/caches/transforms-3/78e0b3cdca5201774e3bd5bbb11df288/transformed/material-1.3.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/fawlys/.gradle/caches/transforms-3/5e5e91625336c7103a732e431bb78dab/transformed/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/fawlys/.gradle/caches/transforms-3/5e5e91625336c7103a732e431bb78dab/transformed/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
-MERGED from [androidx.appcompat:appcompat:1.3.1] /Users/fawlys/.gradle/caches/transforms-3/cf08ad5426447f598b77bfc12dabc345/transformed/appcompat-1.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat:1.3.1] /Users/fawlys/.gradle/caches/transforms-3/cf08ad5426447f598b77bfc12dabc345/transformed/appcompat-1.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [org.tensorflow:tensorflow-lite:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/0dadb21be456cd60f575cd81277542e1/transformed/tensorflow-lite-2.9.0/AndroidManifest.xml:7:5-8:41
-MERGED from [org.tensorflow:tensorflow-lite:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/0dadb21be456cd60f575cd81277542e1/transformed/tensorflow-lite-2.9.0/AndroidManifest.xml:7:5-8:41
-MERGED from [org.tensorflow:tensorflow-lite-select-tf-ops:0.0.0-nightly-SNAPSHOT] /Users/fawlys/.gradle/caches/transforms-3/7506211ab4ad8e7ca6fab8bfc75169d0/transformed/tensorflow-lite-select-tf-ops-0.0.0-nightly-SNAPSHOT/AndroidManifest.xml:4:5-44
-MERGED from [org.tensorflow:tensorflow-lite-select-tf-ops:0.0.0-nightly-SNAPSHOT] /Users/fawlys/.gradle/caches/transforms-3/7506211ab4ad8e7ca6fab8bfc75169d0/transformed/tensorflow-lite-select-tf-ops-0.0.0-nightly-SNAPSHOT/AndroidManifest.xml:4:5-44
-MERGED from [org.tensorflow:tensorflow-lite-task-vision:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/d2755c545f7b05244e02b0b4345c3363/transformed/tensorflow-lite-task-vision-0.4.0/AndroidManifest.xml:5:5-7:41
-MERGED from [org.tensorflow:tensorflow-lite-task-vision:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/d2755c545f7b05244e02b0b4345c3363/transformed/tensorflow-lite-task-vision-0.4.0/AndroidManifest.xml:5:5-7:41
-MERGED from [org.tensorflow:tensorflow-lite-gpu:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/51381004f7950db51975688edbb1c5ff/transformed/tensorflow-lite-gpu-2.9.0/AndroidManifest.xml:7:5-8:41
-MERGED from [org.tensorflow:tensorflow-lite-gpu:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/51381004f7950db51975688edbb1c5ff/transformed/tensorflow-lite-gpu-2.9.0/AndroidManifest.xml:7:5-8:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/778f4df2e3764b563a34df4aaa0c63cc/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/778f4df2e3764b563a34df4aaa0c63cc/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.3.6] /Users/fawlys/.gradle/caches/transforms-3/e3db870b042446c9338bad547fd16329/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.fragment:fragment:1.3.6] /Users/fawlys/.gradle/caches/transforms-3/e3db870b042446c9338bad547fd16329/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.2.4] /Users/fawlys/.gradle/caches/transforms-3/b697dc5061639a705de7d376e8944990/transformed/activity-1.2.4/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.activity:activity:1.2.4] /Users/fawlys/.gradle/caches/transforms-3/b697dc5061639a705de7d376e8944990/transformed/activity-1.2.4/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.3.1] /Users/fawlys/.gradle/caches/transforms-3/63c8f6d80f36d3bf8a0368ab21e19626/transformed/appcompat-resources-1.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.appcompat:appcompat-resources:1.3.1] /Users/fawlys/.gradle/caches/transforms-3/63c8f6d80f36d3bf8a0368ab21e19626/transformed/appcompat-resources-1.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/a47a3139d812d5e76cf1fac445d21229/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/a47a3139d812d5e76cf1fac445d21229/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/5134bd6bc4dec4950137a8ed6ab33fcd/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/5134bd6bc4dec4950137a8ed6ab33fcd/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/e171bc56ffafe4e08cf3a50effdb9538/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/e171bc56ffafe4e08cf3a50effdb9538/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.transition:transition:1.2.0] /Users/fawlys/.gradle/caches/transforms-3/4cebb07ccac871b4ea74ef53b4cfd5da/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.transition:transition:1.2.0] /Users/fawlys/.gradle/caches/transforms-3/4cebb07ccac871b4ea74ef53b4cfd5da/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/3028d41c3e3e6f0d0064345fc3a2cdc2/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/3028d41c3e3e6f0d0064345fc3a2cdc2/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/c72e2a36ce6e0010abee0f4fb76496a7/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/c72e2a36ce6e0010abee0f4fb76496a7/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/1e45971542d579c5d999a7ac1f567b17/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/1e45971542d579c5d999a7ac1f567b17/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/f4191587b5d807e8a79dd626575b738d/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/f4191587b5d807e8a79dd626575b738d/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/01f070a9b30a9077a89cd5510e763636/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.loader:loader:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/01f070a9b30a9077a89cd5510e763636/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/8cfb12dca3ad122062b875c465877109/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/8cfb12dca3ad122062b875c465877109/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.customview:customview:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/347a22310f18348c42d9ceb2053fc7eb/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.customview:customview:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/347a22310f18348c42d9ceb2053fc7eb/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.5.0] /Users/fawlys/.gradle/caches/transforms-3/cb77d7b4ab0aec9a7ae189fe97b70afb/transformed/core-1.5.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.5.0] /Users/fawlys/.gradle/caches/transforms-3/cb77d7b4ab0aec9a7ae189fe97b70afb/transformed/core-1.5.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/710bcdf201139f4a2035e18f90c4ae68/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/710bcdf201139f4a2035e18f90c4ae68/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/5203e0c05f1c69412e5a89b48bec445a/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/5203e0c05f1c69412e5a89b48bec445a/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/df82216f0f1b8a47f54eebfeee215b10/transformed/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/df82216f0f1b8a47f54eebfeee215b10/transformed/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/b3d8b9c4af2df8a626dabfddad8d57df/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/b3d8b9c4af2df8a626dabfddad8d57df/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/349118e4845af89ce79ffd288a6f3bed/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/349118e4845af89ce79ffd288a6f3bed/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/dbec319756647e146818afa35820abad/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.cardview:cardview:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/dbec319756647e146818afa35820abad/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/fawlys/.gradle/caches/transforms-3/e32e81c3fb2c53206512cb7a69c6115d/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/fawlys/.gradle/caches/transforms-3/e32e81c3fb2c53206512cb7a69c6115d/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/ae8c7e96661ae663bc7069576e68db80/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.tracing:tracing:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/ae8c7e96661ae663bc7069576e68db80/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/fawlys/.gradle/caches/transforms-3/165880743e7f4f46d0bf38a1ac89aea6/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/fawlys/.gradle/caches/transforms-3/165880743e7f4f46d0bf38a1ac89aea6/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/bc1cf6d3e7b06427fa354ccc41adf678/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/bc1cf6d3e7b06427fa354ccc41adf678/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/fawlys/.gradle/caches/transforms-3/f480faa7c3bf63f0f1d3f5ff22b692ec/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/fawlys/.gradle/caches/transforms-3/f480faa7c3bf63f0f1d3f5ff22b692ec/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/b166a63f36385ff179d7069488e4e8f7/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/b166a63f36385ff179d7069488e4e8f7/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/a8ce256d2ed88c675a85f932e03271c0/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/a8ce256d2ed88c675a85f932e03271c0/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/dac8c347e9b4349d11f33668e6a1618d/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/dac8c347e9b4349d11f33668e6a1618d/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/77a57a7634ac45c826329a5f0b5c1b4b/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.print:print:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/77a57a7634ac45c826329a5f0b5c1b4b/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/2fbce5937ef2f26af80b44e24755eac5/transformed/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/2fbce5937ef2f26af80b44e24755eac5/transformed/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [org.tensorflow:tensorflow-lite-support-api:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/5e3923d27f2960543e12b10e163b8355/transformed/tensorflow-lite-support-api-0.4.0/AndroidManifest.xml:4:3-71
-MERGED from [org.tensorflow:tensorflow-lite-support-api:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/5e3923d27f2960543e12b10e163b8355/transformed/tensorflow-lite-support-api-0.4.0/AndroidManifest.xml:4:3-71
-MERGED from [org.tensorflow:tensorflow-lite-api:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/552b0f6765b422b3fea8b96f10973a57/transformed/tensorflow-lite-api-2.9.0/AndroidManifest.xml:7:5-8:41
-MERGED from [org.tensorflow:tensorflow-lite-api:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/552b0f6765b422b3fea8b96f10973a57/transformed/tensorflow-lite-api-2.9.0/AndroidManifest.xml:7:5-8:41
-MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/fawlys/.gradle/caches/transforms-3/49f5ef1c5244d496a3e7fd99daf6c484/transformed/image-1.0.0-beta1/AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/fawlys/.gradle/caches/transforms-3/49f5ef1c5244d496a3e7fd99daf6c484/transformed/image-1.0.0-beta1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.material:material:1.3.0] /Users/fawlys/.gradle/caches/transforms-3/8da1198bcdc7e6dde52a52ff13cbe60b/transformed/material-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.3.0] /Users/fawlys/.gradle/caches/transforms-3/8da1198bcdc7e6dde52a52ff13cbe60b/transformed/material-1.3.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/fawlys/.gradle/caches/transforms-3/3bbee2446d772584c46e7f401e7a002d/transformed/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.4] /Users/fawlys/.gradle/caches/transforms-3/3bbee2446d772584c46e7f401e7a002d/transformed/constraintlayout-2.0.4/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.3.1] /Users/fawlys/.gradle/caches/transforms-3/ea46ebbe66f833209ab61d5311528191/transformed/appcompat-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.3.1] /Users/fawlys/.gradle/caches/transforms-3/ea46ebbe66f833209ab61d5311528191/transformed/appcompat-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [org.tensorflow:tensorflow-lite:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/6fd3e8724b9d63b286a02108e891a80e/transformed/tensorflow-lite-2.9.0/AndroidManifest.xml:7:5-8:41
+MERGED from [org.tensorflow:tensorflow-lite:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/6fd3e8724b9d63b286a02108e891a80e/transformed/tensorflow-lite-2.9.0/AndroidManifest.xml:7:5-8:41
+MERGED from [org.tensorflow:tensorflow-lite-select-tf-ops:0.0.0-nightly-SNAPSHOT] /Users/fawlys/.gradle/caches/transforms-3/54768f8d130f0b6a2acf5d6f7195d8eb/transformed/tensorflow-lite-select-tf-ops-0.0.0-nightly-SNAPSHOT/AndroidManifest.xml:4:5-44
+MERGED from [org.tensorflow:tensorflow-lite-select-tf-ops:0.0.0-nightly-SNAPSHOT] /Users/fawlys/.gradle/caches/transforms-3/54768f8d130f0b6a2acf5d6f7195d8eb/transformed/tensorflow-lite-select-tf-ops-0.0.0-nightly-SNAPSHOT/AndroidManifest.xml:4:5-44
+MERGED from [org.tensorflow:tensorflow-lite-task-vision:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/ea9512b3fb9e493d56dbe348c3eb8533/transformed/tensorflow-lite-task-vision-0.4.0/AndroidManifest.xml:5:5-7:41
+MERGED from [org.tensorflow:tensorflow-lite-task-vision:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/ea9512b3fb9e493d56dbe348c3eb8533/transformed/tensorflow-lite-task-vision-0.4.0/AndroidManifest.xml:5:5-7:41
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/f652566ff1c82b281aafd8670bf6acdc/transformed/tensorflow-lite-gpu-2.9.0/AndroidManifest.xml:7:5-8:41
+MERGED from [org.tensorflow:tensorflow-lite-gpu:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/f652566ff1c82b281aafd8670bf6acdc/transformed/tensorflow-lite-gpu-2.9.0/AndroidManifest.xml:7:5-8:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/1704472f91a4223f0f69f0e8df8d3947/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/1704472f91a4223f0f69f0e8df8d3947/transformed/viewpager2-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/fawlys/.gradle/caches/transforms-3/2d68f6bc344941e069cd204f55d86043/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] /Users/fawlys/.gradle/caches/transforms-3/2d68f6bc344941e069cd204f55d86043/transformed/fragment-1.3.6/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /Users/fawlys/.gradle/caches/transforms-3/c2818263849e9f8232eab52f87eb3455/transformed/activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] /Users/fawlys/.gradle/caches/transforms-3/c2818263849e9f8232eab52f87eb3455/transformed/activity-1.2.4/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] /Users/fawlys/.gradle/caches/transforms-3/b4cbb11b3e779a19055f86f125a16115/transformed/appcompat-resources-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.3.1] /Users/fawlys/.gradle/caches/transforms-3/b4cbb11b3e779a19055f86f125a16115/transformed/appcompat-resources-1.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/ac0ef612e9a70710bb88489cf1095436/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/ac0ef612e9a70710bb88489cf1095436/transformed/drawerlayout-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/2bca7877bb4a2f98a4451b7f24edc77d/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/2bca7877bb4a2f98a4451b7f24edc77d/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/c3c9078608964b6ce36dc52867492320/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/c3c9078608964b6ce36dc52867492320/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] /Users/fawlys/.gradle/caches/transforms-3/1286cfded9f69e4b7fb8483fb5d8772a/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] /Users/fawlys/.gradle/caches/transforms-3/1286cfded9f69e4b7fb8483fb5d8772a/transformed/transition-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/220f188b09f4161aa33da9ced3f15807/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/220f188b09f4161aa33da9ced3f15807/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/b65f651ac55233979119fc3e322333ac/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/b65f651ac55233979119fc3e322333ac/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/c7bffa63311596bff5c73a8bc0361546/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/c7bffa63311596bff5c73a8bc0361546/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/dfbbd47e6d9b7e8c5c14be4f6d30d233/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/dfbbd47e6d9b7e8c5c14be4f6d30d233/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/405afc8c1dbeec0ea7ddfa56ee81d888/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/405afc8c1dbeec0ea7ddfa56ee81d888/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/6e9397c02e7e1a7e4110695b8349c0df/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/6e9397c02e7e1a7e4110695b8349c0df/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/76b202748b88c241969dfde159b948d1/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/76b202748b88c241969dfde159b948d1/transformed/customview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.5.0] /Users/fawlys/.gradle/caches/transforms-3/5da798aa290c47065ca7aa96af5435b6/transformed/core-1.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.5.0] /Users/fawlys/.gradle/caches/transforms-3/5da798aa290c47065ca7aa96af5435b6/transformed/core-1.5.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/ae9b77f4eacc247baeefe995085d54a3/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/ae9b77f4eacc247baeefe995085d54a3/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/0ffb60c900bfe47999d184c1f0bc7337/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/0ffb60c900bfe47999d184c1f0bc7337/transformed/lifecycle-viewmodel-savedstate-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/461517c3f7d6cdb902ac9209a1157605/transformed/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] /Users/fawlys/.gradle/caches/transforms-3/461517c3f7d6cdb902ac9209a1157605/transformed/savedstate-1.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/b76dec5e8ebd5ad72591d4c912bf8c47/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/b76dec5e8ebd5ad72591d4c912bf8c47/transformed/lifecycle-runtime-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/37dce2c9e0b95cb0b93b416ffc5cc199/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/37dce2c9e0b95cb0b93b416ffc5cc199/transformed/lifecycle-viewmodel-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/d5dd29c21e02293846b97b51f6612d71/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/d5dd29c21e02293846b97b51f6612d71/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/fawlys/.gradle/caches/transforms-3/989fe53e70fb600511354d3975290551/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/fawlys/.gradle/caches/transforms-3/989fe53e70fb600511354d3975290551/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/ddff3962d0ce0cb679e18e20ca5fc41b/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/ddff3962d0ce0cb679e18e20ca5fc41b/transformed/tracing-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/fawlys/.gradle/caches/transforms-3/de4eb48e3b5cae35328aaf3fb02b4822/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] /Users/fawlys/.gradle/caches/transforms-3/de4eb48e3b5cae35328aaf3fb02b4822/transformed/lifecycle-livedata-2.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/89845c5451dc640a291198c30d1bc217/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] /Users/fawlys/.gradle/caches/transforms-3/89845c5451dc640a291198c30d1bc217/transformed/lifecycle-livedata-core-2.3.1/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/fawlys/.gradle/caches/transforms-3/c92099a1fc6301da63d455d907eae722/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] /Users/fawlys/.gradle/caches/transforms-3/c92099a1fc6301da63d455d907eae722/transformed/core-runtime-2.1.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/34c6a9e47a9e55ae635f600aab476417/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/34c6a9e47a9e55ae635f600aab476417/transformed/interpolator-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/ad5033a4bbafcc3f62ecce7286a81b87/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/ad5033a4bbafcc3f62ecce7286a81b87/transformed/documentfile-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/a95a8c9e1060ee313df03e4a4d49bac2/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/a95a8c9e1060ee313df03e4a4d49bac2/transformed/localbroadcastmanager-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/7057dc99f63294b5e0d582f300ad72aa/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/7057dc99f63294b5e0d582f300ad72aa/transformed/print-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/ec67d526a1cb8be06791dd71db9e9b6e/transformed/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.0.0] /Users/fawlys/.gradle/caches/transforms-3/ec67d526a1cb8be06791dd71db9e9b6e/transformed/annotation-experimental-1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [org.tensorflow:tensorflow-lite-support-api:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/efc1e4a49e4e6a22417ad1180adcdb5c/transformed/tensorflow-lite-support-api-0.4.0/AndroidManifest.xml:4:3-71
+MERGED from [org.tensorflow:tensorflow-lite-support-api:0.4.0] /Users/fawlys/.gradle/caches/transforms-3/efc1e4a49e4e6a22417ad1180adcdb5c/transformed/tensorflow-lite-support-api-0.4.0/AndroidManifest.xml:4:3-71
+MERGED from [org.tensorflow:tensorflow-lite-api:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/296a9e33382ed2172bdb92f6ab074906/transformed/tensorflow-lite-api-2.9.0/AndroidManifest.xml:7:5-8:41
+MERGED from [org.tensorflow:tensorflow-lite-api:2.9.0] /Users/fawlys/.gradle/caches/transforms-3/296a9e33382ed2172bdb92f6ab074906/transformed/tensorflow-lite-api-2.9.0/AndroidManifest.xml:7:5-8:41
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/fawlys/.gradle/caches/transforms-3/096c2ab73a4844234d50ec32553fdcad/transformed/image-1.0.0-beta1/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/fawlys/.gradle/caches/transforms-3/096c2ab73a4844234d50ec32553fdcad/transformed/image-1.0.0-beta1/AndroidManifest.xml:5:5-44
+INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml
+INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
+		INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml
+		ADDED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml
 		MERGED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml
 		MERGED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml
 		MERGED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.READ_PHONE_STATE
-IMPLIED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:2:1-53:12 reason: tensorflow_lite_support.acceleration.configuration has a targetSdkVersion < 4
+IMPLIED from /Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:2:1-62:12 reason: tensorflow_lite_support.acceleration.configuration has a targetSdkVersion < 4

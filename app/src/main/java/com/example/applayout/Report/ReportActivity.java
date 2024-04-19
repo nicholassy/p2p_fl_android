@@ -7,8 +7,12 @@ import android.content.res.AssetManager;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
+
+import org.checkerframework.checker.units.qual.A;
 import org.tensorflow.lite.task.vision.detector.ObjectDetector;
 import org.tensorflow.lite.support.model.Model;
 import org.tensorflow.lite.gpu.CompatibilityList;
@@ -38,6 +42,7 @@ import java.util.Map;
 
 public class ReportActivity extends AppCompatActivity {
     TextView modelDetails;
+    ListView lvReport;
     private Context context;
     Button btStart;
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,9 +50,65 @@ public class ReportActivity extends AppCompatActivity {
         setContentView(R.layout.activity_report);
 
         modelDetails = findViewById(R.id.modelDetails);
-        modelDetails.setText("Model Name: model.tflite\nLast Trained On: 30/01/2024");
+        modelDetails.setText("Model Name: model.tflite\nLast Trained On: 20/03/2024\n");
+
+        lvReport = findViewById(R.id.lvReport);
+        ArrayList<String> reportList = new ArrayList<>();
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, reportList);
+        lvReport.setAdapter(adapter);
 
         context = this;
+
+        FloatBuffer output = null;
+
+        try (Interpreter anotherInterpreter = new Interpreter(loadModelFile(context.getAssets(),"model.tflite"))) {
+            // Restore the weights from the checkpoint file.
+
+            int NUM_TESTS = 4;
+            ByteBuffer testImageBuffer = ByteBuffer.allocateDirect(4 * 28 * 28).order(ByteOrder.nativeOrder());
+            FloatBuffer testImages = testImageBuffer.asFloatBuffer();
+
+            ByteBuffer testLabelsBuffer = ByteBuffer.allocateDirect(4 * 10 * 4).order(ByteOrder.nativeOrder());
+            output = testLabelsBuffer.asFloatBuffer();
+
+            // Fill the test data.
+
+            // Run the inference.
+            Map<String, Object> inputs = new HashMap<>();
+            inputs.put("x", testImages.rewind());
+            Map<String, Object> outputs = new HashMap<>();
+            outputs.put("output", output);
+            anotherInterpreter.runSignature(inputs, outputs, "infer");
+            output.rewind();
+
+            // Process the result to get the final category values.
+            int[] testLabels = new int[NUM_TESTS];
+            float[] confidenceScore = new float[NUM_TESTS];
+            for (int i = 0; i < NUM_TESTS; ++i) {
+                int maxIndex = 0; // Start assuming the first index has the maximum value
+                float maxValue = output.get(i * 10); // Assume first element is the largest initially
+                for (int j = 1; j < 10; ++j) {
+                    float currentValue = output.get(i * 10 + j);
+                    if (currentValue > maxValue) {
+                        maxValue = currentValue;
+                        maxIndex = j;
+                    }
+                }
+                testLabels[i] = maxIndex;
+                confidenceScore[i] = maxValue;
+
+                reportList.add("Test " + i + ": Label = " + maxIndex + ", Confidence = " + String.format("%.2f", maxValue));
+
+                //Log.d("ReportActivity", "Test " + i + ": Label = " + maxIndex + ", Confidence = " + maxValue);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } catch (IndexOutOfBoundsException ex){
+            if (output != null) {
+                Log.e("ReportActivity", "Error accessing buffer at position: " + output.position() + " with limit: " + output.limit(), ex);
+            }
+            throw ex;
+        }
 
         /*Model.Options options;
         CompatibilityList compatList = new CompatibilityList();

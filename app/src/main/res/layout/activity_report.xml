@@ -20,7 +20,7 @@
 
     <TextView
         android:id="@+id/modelDetails"
-        android:text="Model name: ObjectDetection.tflite\nLast trained on: 23/01/2024"
+        android:text="Model name: ObjectDetection.tflite\nLast trained on: 23/01/2024\nModel Accuracy: "
         android:textSize="20sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

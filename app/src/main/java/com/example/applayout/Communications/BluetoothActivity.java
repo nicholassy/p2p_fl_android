@@ -5,21 +5,27 @@ import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothServerSocket;
 import android.bluetooth.BluetoothSocket;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.content.res.AssetFileDescriptor;
+import android.content.res.AssetManager;
 import android.database.Cursor;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -35,11 +41,14 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
 import java.util.Set;
 import java.util.UUID;
 
 public class BluetoothActivity extends AppCompatActivity {
-    Button listen,send,listDevices,selectFile;
+    BluetoothActivity context;
+    Button listen, send, listDevices, selectFile;
     ListView listView;
     TextView status;
 
@@ -55,45 +64,71 @@ public class BluetoothActivity extends AppCompatActivity {
     static final int STATE_CONNECTING = 2;
     static final int STATE_CONNECTED = 3;
     static final int STATE_CONNECTION_FAILED = 4;
-    static final int STATE_MESSAGE_RECEIVED = 5;
+    static final int STATE_MESSAGE_RECEIVED = 7;
+    static final int STATE_MESSAGE_SENT = 6;
     private static final String APP_NAME = "FileTransfer";
     private static final UUID MY_UUID = UUID.fromString("b81e7ee8-564e-11ee-8c99-0242ac120002");
 
     private static final int FILE_REQUEST_CODE = 42;
     private static final int PERMISSION_REQUEST_WRITE_EXTERNAL_STORAGE = 44;
+    private static final int YOUR_PERMISSIONS_REQUEST_BLUETOOTH_CONNECT = 50;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bluetooth);
-
         requestWriteExternalStoragePermission();
         findViewByIdes();
 
+        context = this;
+
         bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
-        if(bluetoothAdapter == null){
+        if (bluetoothAdapter == null) {
             status.setText("Bluetooth is not supported on this device");
             finish();
             return;
         }
 
-        if(!bluetoothAdapter.isEnabled()){
-            Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
-            startActivityForResult(enableIntent,REQUEST_ENABLE_BLUETOOTH);
+        if (!bluetoothAdapter.isEnabled()) {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S && ContextCompat.checkSelfPermission(this, Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.BLUETOOTH_CONNECT}, YOUR_PERMISSIONS_REQUEST_BLUETOOTH_CONNECT);
+            } else {
+                Intent enableIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
+                startActivityForResult(enableIntent, REQUEST_ENABLE_BLUETOOTH);
+            }
+        } else {
+            checkPermissions();
         }
 
         implementListeners();
     }
 
-    private void requestWriteExternalStoragePermission(){
-        if(ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)!=
-                PackageManager.PERMISSION_GRANTED){
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},PERMISSION_REQUEST_WRITE_EXTERNAL_STORAGE);
+    private void checkPermissions() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {  // Only check for Marshmallow and above
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) !=
+                    PackageManager.PERMISSION_GRANTED) {
+
+                if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+                    // Show an explanation to the user *asynchronously*
+                    Toast.makeText(this, "This app needs storage access to download files.", Toast.LENGTH_LONG).show();
+                    ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, PERMISSION_REQUEST_WRITE_EXTERNAL_STORAGE);
+                } else {
+                    // No explanation needed; request the permission
+                    ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, PERMISSION_REQUEST_WRITE_EXTERNAL_STORAGE);
+                }
+            }
         }
     }
 
-    private void findViewByIdes(){
+    private void requestWriteExternalStoragePermission() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) !=
+                PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, PERMISSION_REQUEST_WRITE_EXTERNAL_STORAGE);
+        }
+    }
+
+    private void findViewByIdes() {
         listen = findViewById(R.id.btListenBluetooth);
         send = findViewById(R.id.btSendBluetooth);
         listView = findViewById(R.id.lvBluetooth);
@@ -102,23 +137,63 @@ public class BluetoothActivity extends AppCompatActivity {
         selectFile = findViewById(R.id.btSelectBluetooth);
     }
 
-    private void implementListeners(){
+    private void checkBluetoothPermissions() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.S) {
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.BLUETOOTH_CONNECT) != PackageManager.PERMISSION_GRANTED) {
+                ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.BLUETOOTH_CONNECT}, YOUR_PERMISSIONS_REQUEST_BLUETOOTH_CONNECT);
+            }
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        switch (requestCode){
+            case YOUR_PERMISSIONS_REQUEST_BLUETOOTH_CONNECT:
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    // Permission was granted
+                    Toast.makeText(this, "Bluetooth connect permission granted", Toast.LENGTH_SHORT).show();
+                } else {
+                    // Permission was denied
+                    Toast.makeText(this, "Bluetooth connect permission denied", Toast.LENGTH_SHORT).show();
+                }
+                break;
+            case PERMISSION_REQUEST_WRITE_EXTERNAL_STORAGE:
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    // permission was granted, yay!
+                    Toast.makeText(this, "Storage Write permission granted", Toast.LENGTH_SHORT).show();
+                } else {
+                    // permission denied, boo!
+                    Toast.makeText(this, "Storage Write permission denied", Toast.LENGTH_SHORT).show();
+                }
+                break;
+            default:
+                break;
+        }
+    }
+
+
+    private void implementListeners() {
         listDevices.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Set<BluetoothDevice> bt = bluetoothAdapter.getBondedDevices();
-                String[] strings = new String[bt.size()];
-                btArray = new BluetoothDevice[bt.size()];
-                int index = 0;
-
-                if(bt.size()>0){
-                    for(BluetoothDevice device : bt) {
-                        btArray[index] = device;
-                        strings[index] = device.getName();
-                        index++;
+                if (ContextCompat.checkSelfPermission(BluetoothActivity.this, Manifest.permission.BLUETOOTH_CONNECT) == PackageManager.PERMISSION_GRANTED) {
+                    Set<BluetoothDevice> bt = bluetoothAdapter.getBondedDevices();
+                    String[] strings = new String[bt.size()];
+                    btArray = new BluetoothDevice[bt.size()];
+                    int index = 0;
+                    if (bt.size() > 0) {
+                        // Use the bonded devices as needed
+                        for (BluetoothDevice device : bt) {
+                            btArray[index] = device;
+                            strings[index] = device.getName();
+                            index++;
+                        }
+                        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,strings);
+                        listView.setAdapter(arrayAdapter);
                     }
-                    ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,strings);
-                    listView.setAdapter(arrayAdapter);
+                } else {
+                    checkBluetoothPermissions(); // Ask for permission
                 }
             }
         });
@@ -153,10 +228,8 @@ public class BluetoothActivity extends AppCompatActivity {
         send.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //sendReceive.write();
-                status.setText("File sent");
-                Intent intent = new Intent(v.getContext(), FederatedLearningActivity.class);
-                startActivity(intent);
+                sendReceive.write();
+                //status.setText("File sent");
             }
         });
     }
@@ -173,13 +246,19 @@ public class BluetoothActivity extends AppCompatActivity {
                     break;
                 case STATE_CONNECTED:
                     status.setText("Connected");
+                    //Intent intent = new Intent(BluetoothActivity.this, FederatedLearningActivity.class);
+                    //startActivity(intent);
                     break;
                 case STATE_CONNECTION_FAILED:
                     status.setText("Connection Failed");
                     break;
                 case STATE_MESSAGE_RECEIVED:
-                    //String tempMsg = new String(readBuffer,0, msg.arg1);
                     status.setText("File Received");
+                    Intent intent = new Intent(BluetoothActivity.this, FederatedLearningActivity.class);
+                    startActivity(intent);
+                    break;
+                case STATE_MESSAGE_SENT:
+                    status.setText("File Sent");
                     break;
             }
             return false;
@@ -191,7 +270,12 @@ public class BluetoothActivity extends AppCompatActivity {
 
         public ServerClass(){
             try{
-                serverSocket = bluetoothAdapter.listenUsingRfcommWithServiceRecord(APP_NAME,MY_UUID);
+                //serverSocket = bluetoothAdapter.listenUsingRfcommWithServiceRecord(APP_NAME,MY_UUID);
+                if (ContextCompat.checkSelfPermission(BluetoothActivity.this, Manifest.permission.BLUETOOTH_CONNECT) == PackageManager.PERMISSION_GRANTED) {
+                    serverSocket = bluetoothAdapter.listenUsingRfcommWithServiceRecord(APP_NAME,MY_UUID);
+                } else {
+                    checkBluetoothPermissions();  // Request permission if not already granted
+                }
             } catch (IOException e){
                 e.printStackTrace();
             }
@@ -204,7 +288,6 @@ public class BluetoothActivity extends AppCompatActivity {
                     Message message = Message.obtain();
                     message.what = STATE_CONNECTING;
                     handler.sendMessage(message);
-
                     socket = serverSocket.accept();
                 } catch (IOException e){
                     e.printStackTrace();
@@ -232,7 +315,12 @@ public class BluetoothActivity extends AppCompatActivity {
         public ClientClass (BluetoothDevice device1){
             device = device1;
             try {
-                socket = device.createRfcommSocketToServiceRecord(MY_UUID);
+                if (ContextCompat.checkSelfPermission(BluetoothActivity.this, Manifest.permission.BLUETOOTH_CONNECT) == PackageManager.PERMISSION_GRANTED) {
+                    socket = device.createRfcommSocketToServiceRecord(MY_UUID);
+                } else {
+                    checkBluetoothPermissions();  // Request permission if not already granted
+                }
+                //socket = device.createRfcommSocketToServiceRecord(MY_UUID);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -240,13 +328,24 @@ public class BluetoothActivity extends AppCompatActivity {
 
         public void run(){
             try {
-                socket.connect();
+                if (ContextCompat.checkSelfPermission(BluetoothActivity.this, Manifest.permission.BLUETOOTH_CONNECT) == PackageManager.PERMISSION_GRANTED) {
+                    socket.connect();
+                    Message message = Message.obtain();
+                    message.what = STATE_CONNECTED;
+                    handler.sendMessage(message);
+
+                    sendReceive = new SendReceive(socket);
+                    sendReceive.start();
+                } else {
+                    checkBluetoothPermissions();  // Request permission if not already granted
+                }
+                /*socket.connect();
                 Message message = Message.obtain();
                 message.what = STATE_CONNECTED;
                 handler.sendMessage(message);
 
                 sendReceive = new SendReceive(socket);
-                sendReceive.start();
+                sendReceive.start();*/
 
             } catch (IOException e) {
                 e.printStackTrace();
@@ -272,59 +371,79 @@ public class BluetoothActivity extends AppCompatActivity {
                 tempOut = bluetoothSocket.getOutputStream();
             } catch (IOException e){
                 e.printStackTrace();
+                handler.obtainMessage(STATE_CONNECTION_FAILED).sendToTarget();
             }
             inputStream = tempIn;
             outputStream= tempOut;
         }
 
         //receive
-        public void run(){
-            while(true) {
+        @Override
+        public void run() {
+            //byte[] buffer = new byte[1024];
+            //int bytes;
+            //FileOutputStream fos = null;
+            //while(true) {
                 try {
-                    File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS),fileName+".jpg");
+                    File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "model_new1.tflite");
                     FileOutputStream fos = new FileOutputStream(file);
 
                     byte[] buffer = new byte[1024];
                     int bytes;
 
-                    while ((bytes = inputStream.read(buffer))>0){
-                        fos.write(buffer,0,bytes);
+                    while ((bytes = inputStream.read(buffer)) != -1) {  // Ensure it reads until the end of the stream
+                        fos.write(buffer, 0, bytes);
                     }
-                    handler.obtainMessage(STATE_MESSAGE_RECEIVED);
-                    fos.close();
+                    Log.d("BluetoothActivity", "File received and written successfully.");
+                } catch (IOException e) {
+                    Log.e("BluetoothActivity", "Error while receiving or writing file.", e);
+                } finally {
+                    try {
+                        //if (fos != null) fos.close();
+                        if (inputStream != null) inputStream.close();  // Close streams in the finally block
+                        Log.d("BluetoothActivity", "Sending message that file was received.");
+                        handler.obtainMessage(STATE_MESSAGE_RECEIVED).sendToTarget();
+                    } catch (IOException ex) {
+                        Log.e("BluetoothActivity", "Error closing file streams.", ex);
+                    }
+                }
+            //}
+            /*while (!Thread.currentThread().isInterrupted()) {
+                FileOutputStream fos = null;
+                try {
+                    File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "model.tflite");
+                    fos = new FileOutputStream(file);
+
+                    byte[] buffer = new byte[1024];
+                    int bytes;
+
+                    while ((bytes = inputStream.read(buffer)) > 0) {
+                        fos.write(buffer, 0, bytes);
+                    }
+                    handler.obtainMessage(STATE_MESSAGE_RECEIVED).sendToTarget();
                 } catch (IOException e) {
                     e.printStackTrace();
-                }
-            }
-
-            /*
-            while(true){
-                try{
-                    FileOutputStream fis = new FileOutputStream(filePath);
-                    while ((bytes = inputStream.read(buffer))>0){
-                        fis.write(buffer,0,bytes);
+                    break;
+                } finally {
+                    try {
+                        if (fos != null) {
+                            fos.close(); // Ensure the FileOutputStream is closed after use
+                        }
+                    } catch (IOException e) {
+                        e.printStackTrace();
                     }
-                    status.setText("Received: "+filename);
-                    //bytes = inputStream.read(buffer);
-                    //handler.obtainMessage(STATE_MESSAGE_RECEIVED,bytes,-1,buffer).sendToTarget();
-                } catch (IOException e){
-                    e.printStackTrace();
                 }
             }*/
         }
 
         //send
         public void write(){
-            File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-            File file = new File(path, fileName+"."+extension);
             try {
-                FileInputStream fis = new FileInputStream(file);
-                byte[] buffer = new byte[1024];
-                int bytes=0;
-                while((bytes = fis.read(buffer))>0){
-                    outputStream.write(buffer,0,bytes);
-                }
-                fis.close();
+                MappedByteBuffer buffer = loadModelFile(context.getAssets(), "model.tflite");
+                byte[] bytes = new byte[buffer.remaining()];
+                buffer.get(bytes);
+                outputStream.write(bytes);
+                handler.obtainMessage(STATE_MESSAGE_SENT).sendToTarget();
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -353,5 +472,15 @@ public class BluetoothActivity extends AppCompatActivity {
             extension = filename.substring(filename.lastIndexOf(".")+1);
             status.setText("Selected file: "+fileName);
         }
+    }
+
+    private static MappedByteBuffer loadModelFile(AssetManager assets, String modelFilename)
+            throws IOException {
+        AssetFileDescriptor fileDescriptor = assets.openFd(modelFilename);
+        FileInputStream inputStream = new FileInputStream(fileDescriptor.getFileDescriptor());
+        FileChannel fileChannel = inputStream.getChannel();
+        long startOffset = fileDescriptor.getStartOffset();
+        long declaredLength = fileDescriptor.getDeclaredLength();
+        return fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffset, declaredLength);
     }
 }

@@ -12,16 +12,12 @@
         "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/layout/activity_report.xml"
     },
     {
-        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/mipmap-xxhdpi/ic_launcher_round.webp"
-    },
-    {
         "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/layout_activity_wifi.xml.flat",
         "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/layout/activity_wifi.xml"
     },
     {
-        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/drawable-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-pngs-14:/drawable-xxhdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/mipmap-mdpi_ic_launcher_round.webp.flat",
@@ -32,20 +28,12 @@
         "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/mipmap-xxxhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/xml_data_extraction_rules.xml.flat",
-        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/xml/data_extraction_rules.xml"
-    },
-    {
-        "merged": "com.example.applayout.app-merged_res-18:/layout_activity_federatedlearning.xml.flat",
-        "source": "com.example.applayout.app-main-20:/layout/activity_federatedlearning.xml"
-    },
-    {
         "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/mipmap-mdpi_ic_launcher.webp.flat",
         "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/drawable-mdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-pngs-14:/drawable-mdpi/ic_launcher_foreground.png"
     },
     {
         "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/layout_activity_bluetooth.xml.flat",
@@ -56,6 +44,42 @@
         "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/drawable/ic_launcher_background.xml"
     },
     {
+        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/layout_activity_main.xml.flat",
+        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/drawable-hdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-pngs-14:/drawable-hdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/mipmap-xxxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/drawable-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-pngs-14:/drawable-xxxhdpi/ic_launcher_foreground.png"
+    },
+    {
+        "merged": "com.example.applayout.app-merged_res-18:/layout_activity_report.xml.flat",
+        "source": "com.example.applayout.app-main-20:/layout/activity_report.xml"
+    },
+    {
         "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/layout_activity_federatedlearning.xml.flat",
         "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/layout/activity_federatedlearning.xml"
     },
@@ -64,31 +88,23 @@
         "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/xml/backup_rules.xml"
     },
     {
-        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/layout_activity_communications.xml.flat",
-        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/layout/activity_communications.xml"
+        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/drawable-ldpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-pngs-14:/drawable-ldpi/ic_launcher_foreground.png"
     },
     {
-        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/layout_activity_main.xml.flat",
-        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/layout/activity_main.xml"
+        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/layout_activity_communications.xml.flat",
+        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/layout/activity_communications.xml"
     },
     {
         "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/mipmap-anydpi_ic_launcher.xml.flat",
-        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/mipmap-anydpi/ic_launcher.xml"
+        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-pngs-14:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/drawable/ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/mipmap-anydpi_ic_launcher_round.xml.flat",
-        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/mipmap-anydpi/ic_launcher_round.xml"
-    },
-    {
-        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-main-20:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-merged_res-18:/drawable-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "/Users/fawlys/.gradle/daemon/8.2/com.example.applayout.app-pngs-14:/drawable-xhdpi/ic_launcher_foreground.png"
     }
 ]

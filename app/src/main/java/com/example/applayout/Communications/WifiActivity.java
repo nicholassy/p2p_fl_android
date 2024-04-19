@@ -6,6 +6,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
+import android.content.res.AssetFileDescriptor;
+import android.content.res.AssetManager;
 import android.database.Cursor;
 import android.net.Uri;
 import android.net.wifi.p2p.WifiP2pConfig;
@@ -17,14 +19,19 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -35,6 +42,8 @@ import java.net.InetAddress;
 import java.net.InetSocketAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.nio.MappedByteBuffer;
+import java.nio.channels.FileChannel;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -68,9 +77,10 @@ public class WifiActivity extends AppCompatActivity {
 
     private static final int FILE_REQUEST_CODE = 42;
     private static final int PERMISSION_REQUEST_WRITE_EXTERNAL_STORAGE = 44;
+    private static final int PERMISSION_REQUEST_FINE_LOCATION = 45;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_wifi);
         requestWriteExternalStoragePermission();
@@ -78,10 +88,45 @@ public class WifiActivity extends AppCompatActivity {
         exqListener();
     }
 
-    private void requestWriteExternalStoragePermission(){
-        if(ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)!=
-                PackageManager.PERMISSION_GRANTED){
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},PERMISSION_REQUEST_WRITE_EXTERNAL_STORAGE);
+    private void requestWriteExternalStoragePermission() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) !=
+                PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, PERMISSION_REQUEST_WRITE_EXTERNAL_STORAGE);
+        }
+    }
+
+    private void requestLocationPermission() {
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) !=
+                PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+                    PERMISSION_REQUEST_FINE_LOCATION);
+        }
+    }
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+        switch (requestCode) {
+            case PERMISSION_REQUEST_FINE_LOCATION:
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    Toast.makeText(this, "Location permission granted for discovery", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(this, "Location permission required for discovery", Toast.LENGTH_SHORT).show();
+                }
+                break;
+            case PERMISSION_REQUEST_WRITE_EXTERNAL_STORAGE:
+                // Handle WRITE_EXTERNAL_STORAGE permission result
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+                    // permission was granted, yay!
+                    Toast.makeText(this, "Storage Write permission granted", Toast.LENGTH_SHORT).show();
+                } else {
+                    // permission denied, boo!
+                    Toast.makeText(this, "Storage Write permission denied", Toast.LENGTH_SHORT).show();
+                }
+                break;
+            default:
+                break;
         }
     }
 
@@ -91,7 +136,7 @@ public class WifiActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Settings.ACTION_WIFI_SETTINGS);
-                startActivityForResult(intent,1);
+                startActivityForResult(intent, 1);
             }
         });
 
@@ -99,17 +144,21 @@ public class WifiActivity extends AppCompatActivity {
         discoverButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                manager.discoverPeers(channel, new WifiP2pManager.ActionListener() {
-                    @Override
-                    public void onSuccess() {
-                        connectionStatus.setText("Discovery Started");
-                    }
+                if (ActivityCompat.checkSelfPermission(WifiActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                    requestLocationPermission();
+                } else {
+                    manager.discoverPeers(channel, new WifiP2pManager.ActionListener() {
+                        @Override
+                        public void onSuccess() {
+                            connectionStatus.setText("Discovery Started");
+                        }
 
-                    @Override
-                    public void onFailure(int i) {
-                        connectionStatus.setText("Discovery Not Started");
-                    }
-                });
+                        @Override
+                        public void onFailure(int i) {
+                            connectionStatus.setText("Discovery Not Started");
+                        }
+                    });
+                }
             }
         });
 
@@ -117,21 +166,25 @@ public class WifiActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                //Selecting position of the listView
-                final WifiP2pDevice device = deviceArray[i];
-                WifiP2pConfig config = new WifiP2pConfig();
-                config.deviceAddress = device.deviceAddress;
-                manager.connect(channel, config, new WifiP2pManager.ActionListener() {
-                    @Override
-                    public void onSuccess() {
-                        connectionStatus.setText("Connected: " + device.deviceName);
-                    }
+                if (ActivityCompat.checkSelfPermission(WifiActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                    requestLocationPermission();
+                } else {
+                    //Selecting position of the listView
+                    final WifiP2pDevice device = deviceArray[i];
+                    WifiP2pConfig config = new WifiP2pConfig();
+                    config.deviceAddress = device.deviceAddress;
+                    manager.connect(channel, config, new WifiP2pManager.ActionListener() {
+                        @Override
+                        public void onSuccess() {
+                            connectionStatus.setText("Connected: " + device.deviceName);
+                        }
 
-                    @Override
-                    public void onFailure(int i) {
-                        connectionStatus.setText("Not Connected");
-                    }
-                });
+                        @Override
+                        public void onFailure(int i) {
+                            connectionStatus.setText("Not Connected");
+                        }
+                    });
+                }
             }
         });
 
@@ -145,8 +198,8 @@ public class WifiActivity extends AppCompatActivity {
                     serverClass.write();
                     connectionStatus.setText("File sent");
                 }
-                Intent intent = new Intent(view.getContext(), FederatedLearningActivity.class);
-                startActivity(intent);
+                //Intent intent = new Intent(view.getContext(), FederatedLearningActivity.class);
+                //startActivity(intent);
             }
         });
 
@@ -250,16 +303,20 @@ public class WifiActivity extends AppCompatActivity {
         private OutputStream outputStream;
 
         public void write() {
-            File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-            File file = new File(path, fileName + "." + extension);
+            //File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+            //File file = new File(path, fileName + "." + extension);
             try {
-                FileInputStream fis = new FileInputStream(file);
+                /*FileInputStream fis = new FileInputStream(file);
                 byte[] buffer = new byte[1024];
                 int bytes = 0;
                 while ((bytes = fis.read(buffer)) > 0) {
                     outputStream.write(buffer, 0, bytes);
                 }
-                fis.close();
+                fis.close();*/
+                MappedByteBuffer buffer = loadModelFile(WifiActivity.this.getAssets(), "model.tflite");
+                byte[] bytes = new byte[buffer.remaining()];
+                buffer.get(bytes);
+                outputStream.write(bytes);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -284,7 +341,7 @@ public class WifiActivity extends AppCompatActivity {
                 }
                 if (socket != null) {
                     try {
-                        File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "fileName.jpg");
+                        File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "model(WiFi).tflite");
                         FileOutputStream fos = new FileOutputStream(file);
 
                         byte[] buffer = new byte[1024];
@@ -293,13 +350,21 @@ public class WifiActivity extends AppCompatActivity {
                         while ((bytes = inputStream.read(buffer)) > 0) {
                             fos.write(buffer, 0, bytes);
                         }
-
-                        inputStream.close();
-                        outputStream.close();
-                        fos.close();
-                        socket.close();
+                        //Intent intent = new Intent(WifiActivity.this, FederatedLearningActivity.class);
+                        //startActivity(intent);
                     } catch (IOException e) {
                         e.printStackTrace();
+                    } finally {
+                        try{
+                            if (inputStream != null) inputStream.close();
+                            if (outputStream != null)outputStream.close();
+                            if (socket != null) socket.close();
+                            if (serverSocket != null) serverSocket.close();
+                            Intent intent = new Intent(WifiActivity.this, FederatedLearningActivity.class);
+                            startActivity(intent);
+                        } catch(IOException e){
+                            e.printStackTrace();
+                        }
                     }
                 }
             }
@@ -317,16 +382,20 @@ public class WifiActivity extends AppCompatActivity {
         }
 
         public void write() {
-            File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
-            File file = new File(path, fileName + "." + extension);
+            //File path = Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS);
+            //File file = new File(path, fileName + "." + extension);
             try {
-                FileInputStream fis = new FileInputStream(file);
+                /*FileInputStream fis = new FileInputStream(file);
                 byte[] buffer = new byte[1024];
                 int bytes = 0;
                 while ((bytes = fis.read(buffer)) > 0) {
                     outputStream.write(buffer, 0, bytes);
                 }
-                fis.close();
+                fis.close();*/
+                MappedByteBuffer buffer = loadModelFile(WifiActivity.this.getAssets(), "model.tflite");
+                byte[] bytes = new byte[buffer.remaining()];
+                buffer.get(bytes);
+                outputStream.write(bytes);
             } catch (IOException e) {
                 e.printStackTrace();
             }
@@ -350,7 +419,7 @@ public class WifiActivity extends AppCompatActivity {
 
                 if (socket != null) {
                     try {
-                        File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "fileName.jpg");
+                        File file = new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS), "model(WiFi).tflite");
                         FileOutputStream fos = new FileOutputStream(file);
 
                         byte[] buffer = new byte[1024];
@@ -359,17 +428,40 @@ public class WifiActivity extends AppCompatActivity {
                         while ((bytes = inputStream.read(buffer)) > 0) {
                             fos.write(buffer, 0, bytes);
                         }
+                        Log.e("WifiActivity","File received and written successfully.");
 
                         inputStream.close();
                         outputStream.close();
                         fos.close();
                         socket.close();
+                        Intent intent = new Intent(WifiActivity.this, FederatedLearningActivity.class);
+                        startActivity(intent);
                     } catch (IOException e) {
-                        e.printStackTrace();
+                        Log.e("WiFiActivity", "Error while receiving or writing file.", e);
+                    }  finally {
+                        try{
+                            if (inputStream != null) inputStream.close();
+                            if (outputStream != null)outputStream.close();
+                            if (socket != null) socket.close();
+                        } catch(IOException e){
+                            e.printStackTrace();
+                        }
+                        //Intent intent = new Intent(WifiActivity.this, FederatedLearningActivity.class);
+                        //startActivity(intent);
                     }
                 }
             }
         }
+    }
+
+    private static MappedByteBuffer loadModelFile(AssetManager assets, String modelFilename)
+            throws IOException {
+        AssetFileDescriptor fileDescriptor = assets.openFd(modelFilename);
+        FileInputStream inputStream = new FileInputStream(fileDescriptor.getFileDescriptor());
+        FileChannel fileChannel = inputStream.getChannel();
+        long startOffset = fileDescriptor.getStartOffset();
+        long declaredLength = fileDescriptor.getDeclaredLength();
+        return fileChannel.map(FileChannel.MapMode.READ_ONLY, startOffset, declaredLength);
     }
 
     @Override

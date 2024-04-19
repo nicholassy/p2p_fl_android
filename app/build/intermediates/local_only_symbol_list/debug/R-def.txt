@@ -12,6 +12,7 @@ drawable ic_launcher_foreground
 id bluetooth
 id btBluetooth
 id btConfirmApplication
+id btConfirmFederatedLearning
 id btDiscoverWifi
 id btListDeviceBluetooth
 id btListenBluetooth

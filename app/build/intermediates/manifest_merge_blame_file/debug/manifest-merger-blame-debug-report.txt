@@ -5,114 +5,139 @@
 5    android:versionName="1.0" >
 6
 7    <uses-sdk
-8        android:minSdkVersion="26"
-9        android:targetSdkVersion="30" />
+8        android:minSdkVersion="22"
+8-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml
 10
-11    <uses-permission android:name="android.permission.BLUETOOTH" />
-11-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:5:5-67
-11-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:5:22-65
-12    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
-12-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:6:5-73
-12-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:6:22-71
-13    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-13-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:7:5-78
-13-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:7:22-76
-14    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-14-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:8:5-80
-14-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:8:22-78
-15    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-15-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:9:5-79
-15-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:9:22-77
-16    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
-16-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:10:5-81
-16-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:10:22-79
-17    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-17-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:11:5-80
-17-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:11:22-78
-18    <uses-permission
-18-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:12:5-13:62
-19        android:name="android.permission.ACCESS_WIFI_STATE"
-19-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:13:9-60
-20        android:required="true" />
-20-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:12:22-45
-21    <uses-permission
-21-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:14:5-15:62
-22        android:name="android.permission.CHANGE_WIFI_STATE"
-22-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:15:9-60
-23        android:required="true" />
-23-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:14:22-45
-24    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-25
-26    <application
-26-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:17:5-51:19
-27        android:allowBackup="true"
-27-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:18:9-35
-28        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-28-->[androidx.core:core:1.5.0] /Users/fawlys/.gradle/caches/transforms-3/cb77d7b4ab0aec9a7ae189fe97b70afb/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
-29        android:debuggable="true"
-30        android:extractNativeLibs="false"
-31        android:icon="@mipmap/ic_launcher"
-31-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:19:9-43
-32        android:label="@string/app_name"
-32-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:20:9-41
-33        android:roundIcon="@mipmap/ic_launcher_round"
-33-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:21:9-54
-34        android:supportsRtl="true"
-34-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:22:9-35
-35        android:testOnly="true"
-36        android:theme="@style/Theme.AppLayout" >
-36-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:23:9-47
-37        <activity
-37-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:25:9-32:20
-38            android:name="com.example.applayout.MainActivity"
-38-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:25:19-47
-39            android:exported="true" >
-39-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:26:13-36
-40            <intent-filter>
-40-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:27:13-31:29
-41                <action android:name="android.intent.action.MAIN" />
-41-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:28:17-68
-41-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:28:25-66
-42
-43                <category android:name="android.intent.category.LAUNCHER" />
-43-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:30:17-76
-43-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:30:27-74
-44            </intent-filter>
-45        </activity>
-46        <activity
-46-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:34:9-36:20
-47            android:name="com.example.applayout.Report.ReportActivity"
-47-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:34:19-56
-48            android:exported="true" >
-48-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:35:13-36
-49        </activity>
-50        <activity
-50-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:38:9-40:20
-51            android:name="com.example.applayout.Communications.CommunicationActivity"
-51-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:38:19-71
-52            android:exported="true" >
-52-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:39:13-36
-53        </activity>
-54        <activity
-54-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:42:9-44:20
-55            android:name="com.example.applayout.Communications.BluetoothActivity"
-55-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:42:19-67
-56            android:exported="true" >
-56-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:43:13-36
-57        </activity>
-58        <activity
-58-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:46:9-48:20
-59            android:name="com.example.applayout.Communications.WifiActivity"
-59-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:46:19-62
-60            android:exported="true" >
-60-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:47:13-36
-61        </activity>
-62        <activity
-62-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:49:9-50:48
-63            android:name="com.example.applayout.FederatedLearning.FederatedLearningActivity"
-63-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:49:19-78
-64            android:exported="true" />
-64-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:50:13-36
-65    </application>
-66
-67</manifest>
+11    <!-- Bluetooth Permissions -->
+12    <uses-permission
+12-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:6:5-7:37
+13        android:name="android.permission.BLUETOOTH"
+13-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:6:22-65
+14        android:maxSdkVersion="30" />
+14-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:7:9-35
+15    <uses-permission
+15-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:8:5-9:37
+16        android:name="android.permission.BLUETOOTH_ADMIN"
+16-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:8:22-71
+17        android:maxSdkVersion="30" />
+17-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:9:9-35
+18    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" />
+18-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:10:5-72
+18-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:10:22-70
+19    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+19-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:11:5-75
+19-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:11:22-73
+20    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE" />
+20-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:12:5-77
+20-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:12:22-75
+21    <uses-permission android:name="android.permission.INTERNET" />
+21-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:13:5-66
+21-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:13:22-64
+22    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+22-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:14:5-78
+22-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:14:22-76
+23    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+23-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:15:5-80
+23-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:15:22-78
+24    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+24-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:16:5-84
+24-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:16:22-82
+25    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+25-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:17:5-79
+25-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:17:22-77
+26    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+26-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:18:5-81
+26-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:18:22-79
+27    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+27-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:19:5-80
+27-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:19:22-78
+28    <uses-permission
+28-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:20:5-21:62
+29        android:name="android.permission.ACCESS_WIFI_STATE"
+29-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:21:9-60
+30        android:required="true" />
+30-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:20:22-45
+31    <uses-permission
+31-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:22:5-23:62
+32        android:name="android.permission.CHANGE_WIFI_STATE"
+32-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:23:9-60
+33        android:required="true" />
+33-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:22:22-45
+34    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+35
+36    <application
+36-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:25:5-60:19
+37        android:allowBackup="true"
+37-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:26:9-35
+38        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+38-->[androidx.core:core:1.5.0] /Users/fawlys/.gradle/caches/transforms-3/5da798aa290c47065ca7aa96af5435b6/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
+39        android:debuggable="true"
+40        android:icon="@mipmap/ic_launcher"
+40-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:27:9-43
+41        android:label="@string/app_name"
+41-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:28:9-41
+42        android:requestLegacyExternalStorage="true"
+42-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:32:9-52
+43        android:roundIcon="@mipmap/ic_launcher_round"
+43-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:29:9-54
+44        android:supportsRtl="true"
+44-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:30:9-35
+45        android:testOnly="true"
+46        android:theme="@style/Theme.AppLayout" >
+46-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:31:9-47
+47        <activity
+47-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:34:9-41:20
+48            android:name="com.example.applayout.MainActivity"
+48-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:34:19-47
+49            android:exported="true" >
+49-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:35:13-36
+50            <intent-filter>
+50-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:36:13-40:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:37:17-68
+51-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:37:25-66
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:39:17-76
+53-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:39:27-74
+54            </intent-filter>
+55        </activity>
+56        <activity
+56-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:43:9-45:20
+57            android:name="com.example.applayout.Report.ReportActivity"
+57-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:43:19-56
+58            android:exported="true" >
+58-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:44:13-36
+59        </activity>
+60        <activity
+60-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:47:9-49:20
+61            android:name="com.example.applayout.Communications.CommunicationActivity"
+61-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:47:19-71
+62            android:exported="true" >
+62-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:48:13-36
+63        </activity>
+64        <activity
+64-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:51:9-53:20
+65            android:name="com.example.applayout.Communications.BluetoothActivity"
+65-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:51:19-67
+66            android:exported="true" >
+66-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:52:13-36
+67        </activity>
+68        <activity
+68-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:55:9-57:20
+69            android:name="com.example.applayout.Communications.WifiActivity"
+69-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:55:19-62
+70            android:exported="true" >
+70-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:56:13-36
+71        </activity>
+72        <activity
+72-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:58:9-59:48
+73            android:name="com.example.applayout.FederatedLearning.FederatedLearningActivity"
+73-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:58:19-78
+74            android:exported="true" />
+74-->/Users/fawlys/Downloads/examples-demo/lite/examples/p2pfl_android4/app/src/main/AndroidManifest.xml:59:13-36
+75    </application>
+76
+77</manifest>
